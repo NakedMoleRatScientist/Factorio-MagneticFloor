@@ -1,0 +1,10 @@
+{
+  "name": "MagneticFloor",
+  "version": "0.0.1",
+  "title": "Bob's Warfare",
+  "author": "kiba",
+  "contact": "hackerkiba@gmail.com",
+  "homepage": "",
+  "description": "Go faster, with magnetic floors.",
+  "dependencies": ["base >= 0.12.0"]
+}
