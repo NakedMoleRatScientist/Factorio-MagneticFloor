@@ -12,6 +12,14 @@ data:extend({
     },
     stack_size = 50,
     order = "b[concrete]"
-  }
+  },
+  {
+    type = 'item',
+    name = 'hoverboard',
+    icon = '__MagneticFloor__/graphics/icons/hoverboard-icon.png',
+    flags = {},
+    stack_size = 1,
+    order = 'a'
+  },
 
 })
