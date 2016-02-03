@@ -14,12 +14,12 @@ data:extend({
     order = "b[concrete]"
   },
   {
-    type = 'item',
-    name = 'hoverboard',
-    icon = '__MagneticFloor__/graphics/icons/hoverboard-icon.png',
-    flags = {},
-    stack_size = 1,
-    order = 'a'
+    type = "item",
+    name = "hoverboard",
+    icon = "__MagneticFloor__/graphics/icons/hoverboard-icon.png",
+    placed_as_equipment_result = "hoverboard",
+    flags = {"goes-to-main-inventory"},
+    stack_size = 10
   },
 
 })

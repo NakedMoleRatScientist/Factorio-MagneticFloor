@@ -4,7 +4,7 @@ data:extend({
     name = "hoverboard",
     sprite =
     {
-      filename = "__MagneticFloor__/graphics/icon/hoverboard.png",
+      filename = "__MagneticFloor__/graphics/icons/hoverboard-icon.png",
       width = 64,
       height = 128,
       priority = "medium"
@@ -21,6 +21,6 @@ data:extend({
       usage_priority = "secondary-input"
     },
     energy_consumption = "1kW",
-    movement_bonus = 0.3
+    movement_bonus = 1
   },
 })

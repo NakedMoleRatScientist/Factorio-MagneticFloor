@@ -12,14 +12,15 @@ data:extend({
     result = "copper-floor"
   },
   {
-    type = 'recipe',
-    name = 'hoverboard',
-    enabled = 'true',
+    type = "recipe",
+    name = "hoverboard",
+    enabled = false,
+    energy_required = 10,
     ingredients =
     {
-      {"copper-plate",2},
-      {"steel-plate",1},
-      {"battery",1}
+      {"copper-plate", 1},
+      {"battery", 1},
+      {"steel-plate", 1},
     },
     result = "hoverboard"
   },
