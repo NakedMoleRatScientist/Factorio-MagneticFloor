@@ -1,10 +1,10 @@
-0.0.1
-* initial release
+Version# 0.0.1 (2016-02-01):
+* Initial release 
 ---
-0.0.2
-* add hoverboard
+Version# 0.0.2 (2016-02-03): Add hoverboard equipment
+* add hoverboard equipment
 --
-0.0.3
+Version# 0.0.3(2016-02-04):0.0.1
 * nerf movement bonus of hoverboard from 100% to 10%(1 to 0.1)
 * prevent players from using more than one hoverboard
 * update hoverboard equipment size from 1 by 1 to 3 by 2
