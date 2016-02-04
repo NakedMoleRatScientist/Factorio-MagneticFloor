@@ -9,12 +9,13 @@ data:extend({
       {"concrete", 1}
 
     },
+    subgroup = "magnetic-floor",
     result = "copper-floor"
   },
   {
     type = "recipe",
     name = "hoverboard",
-    enabled = false,
+    enabled = true,
     energy_required = 10,
     ingredients =
     {
@@ -22,6 +23,7 @@ data:extend({
       {"battery", 1},
       {"steel-plate", 1},
     },
+    subgroup = 'magnetic-equipment',
     result = "hoverboard"
   },
 
