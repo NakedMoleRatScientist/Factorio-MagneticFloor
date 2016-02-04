@@ -19,7 +19,6 @@ script.on_event(defines.events.on_tick, function(event)
           end
           count = count + 1
         end
-        game.player.print(count)
       end
     end
   end
