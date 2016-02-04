@@ -1,0 +1,12 @@
+0.0.1
+* initial release
+---
+0.0.2
+* add hoverboard
+--
+0.0.3
+* nerf movement bonus of hoverboard from 100% to 10%(1 to 0.1)
+* prevent players from using more than one hoverboard
+* update hoverboard equipment size from 1 by 1 to 3 by 2
+* Add technology requirement for both copper floor and hoverboard
+* Add item group tab MagneticFloor and sort recipe by subgroup
