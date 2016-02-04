@@ -11,8 +11,8 @@ data:extend({
     },
     shape =
     {
-      width = 1,
-      height = 1,
+      width = 3,
+      height = 2,
       type = "full"
     },
     energy_source =
@@ -21,6 +21,6 @@ data:extend({
       usage_priority = "secondary-input"
     },
     energy_consumption = "1kW",
-    movement_bonus = 1
+    movement_bonus = 0.1
   },
 })
