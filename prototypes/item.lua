@@ -14,6 +14,34 @@ data:extend({
     order = "b[concrete]"
   },
   {
+    type = 'item',
+    name = 'copper-floor2',
+    icon = "__base__/graphics/icons/copper-plate.png",
+    flags = {"goes-to-quickbar"},
+    place_as_tile =
+    {
+      result = "copper-floor2",
+      condition_size = 4,
+      condition = { "water-tile" }
+    },
+    stack_size = 50,
+    order = "b[concrete]"
+  },
+  {
+    type = 'item',
+    name = 'copper-floor3',
+    icon = "__base__/graphics/icons/copper-plate.png",
+    flags = {"goes-to-quickbar"},
+    place_as_tile =
+    {
+      result = "copper-floor3",
+      condition_size = 4,
+      condition = { "water-tile" }
+    },
+    stack_size = 50,
+    order = "b[concrete]"
+  },
+  {
     type = "item",
     name = "hoverboard",
     icon = "__MagneticFloor__/graphics/icons/hoverboard-icon.png",
