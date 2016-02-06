@@ -32,7 +32,9 @@ data:extend({
     {
       {"copper-plate",20},
       {"copper-floor2",2}
-    }
+    },
+    subgroup = "magnetic-floor",
+    result = "copper-floor3"
   },
   {
     type = "recipe",
