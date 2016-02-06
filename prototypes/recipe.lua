@@ -25,7 +25,7 @@ data:extend({
     result = "copper-floor2"
   },
   {
-    type = "recipe"
+    type = "recipe",
     name = "copper-floor3",
     enabled = true,
     ingredients =
