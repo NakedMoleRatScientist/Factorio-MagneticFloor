@@ -30,7 +30,7 @@ data:extend({
   {
     type = 'item',
     name = 'copper-floor3',
-    icon = "__base__/graphics/icons/copper-plate.png",
+    icon = "__MagneticFloor__/graphics/icons/copper-floor-icon_level3.png",
     flags = {"goes-to-quickbar"},
     place_as_tile =
     {
