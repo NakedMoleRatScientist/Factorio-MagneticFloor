@@ -14,6 +14,18 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "copper-floor2",
+    enabled = true,
+    ingredients =
+    {
+      {"copper-plate",10},
+      {"copper-floor",1}
+    },
+    subgroup = "magnetic-floor",
+    result = "copper-floor2"
+  },
+  {
+    type = "recipe",
     name = "hoverboard",
     enabled = true,
     energy_required = 10,
