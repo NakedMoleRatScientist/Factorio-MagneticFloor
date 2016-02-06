@@ -25,6 +25,16 @@ data:extend({
     result = "copper-floor2"
   },
   {
+    type = "recipe"
+    name = "copper-floor3",
+    enabled = true,
+    ingredients =
+    {
+      {"copper-plate",20},
+      {"copper-floor2",2}
+    }
+  },
+  {
     type = "recipe",
     name = "hoverboard",
     enabled = true,
