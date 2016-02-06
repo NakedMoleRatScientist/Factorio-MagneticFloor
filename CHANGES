@@ -1,12 +1,17 @@
 Version# 0.0.1 (2016-02-01):
-* Initial release 
+* Initial release
 ---
 Version# 0.0.2 (2016-02-03): Add hoverboard equipment
 * add hoverboard equipment
 --
-Version# 0.0.3(2016-02-04):0.0.1
+Version# 0.0.3(2016-02-04)
 * nerf movement bonus of hoverboard from 100% to 10%(1 to 0.1)
 * prevent players from using more than one hoverboard
 * update hoverboard equipment size from 1 by 1 to 3 by 2
 * Add technology requirement for both copper floor and hoverboard
 * Add item group tab MagneticFloor and sort recipe by subgroup
+---
+Version# 0.0.4(2016-02-06)
+* Add new copper floor level 2 and 3
+* Add corresponding icons from copper-floor all the way to level 3
+* Add technology upgrade for new copper flooring
