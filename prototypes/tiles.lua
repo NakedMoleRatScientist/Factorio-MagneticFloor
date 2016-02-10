@@ -1,3 +1,49 @@
+local inner_corner_base =
+{
+  picture = "__base__/graphics/terrain/concrete/concrete-inner-corner.png",
+  count = 8
+}
+local outer_corner_base =
+{
+  picture = "__base__/graphics/terrain/concrete/concrete-outer-corner.png",
+  count = 8
+}
+
+local side_base =
+{
+  picture = "__base__/graphics/terrain/concrete/concrete-side.png",
+  count = 8
+}
+local u_transition_base =
+{
+  picture = "__base__/graphics/terrain/concrete/concrete-u.png",
+  count = 8
+}
+local o_transition_base =
+{
+  picture = "__base__/graphics/terrain/concrete/concrete-o.png",
+  count = 1
+}
+
+local walking_sound_base = {
+  {
+    filename = "__base__/sound/walking/concrete-01.ogg",
+    volume = 1.2
+  },
+  {
+    filename = "__base__/sound/walking/concrete-02.ogg",
+    volume = 1.2
+  },
+  {
+    filename = "__base__/sound/walking/concrete-03.ogg",
+    volume = 1.2
+  },
+  {
+    filename = "__base__/sound/walking/concrete-04.ogg",
+    volume = 1.2
+  }
+}
+
 data:extend(
 {
   {
@@ -32,51 +78,13 @@ data:extend(
           probability = 1,
         },
       },
-      inner_corner =
-      {
-        picture = "__base__/graphics/terrain/concrete/concrete-inner-corner.png",
-        count = 8
-      },
-      outer_corner =
-      {
-        picture = "__base__/graphics/terrain/concrete/concrete-outer-corner.png",
-        count = 8
-      },
-      side =
-      {
-        picture = "__base__/graphics/terrain/concrete/concrete-side.png",
-        count = 8
-      },
-      u_transition =
-      {
-        picture = "__base__/graphics/terrain/concrete/concrete-u.png",
-        count = 8
-      },
-      o_transition =
-      {
-        picture = "__base__/graphics/terrain/concrete/concrete-o.png",
-        count = 1
-      }
+      inner_corner = inner_corner_base,
+      outer_corner = outer_corner_base,
+      side = side_base,
+      u_transition = u_transition_base,
+      o_transition = o_transition_base,
     },
-    walking_sound =
-    {
-      {
-        filename = "__base__/sound/walking/concrete-01.ogg",
-        volume = 1.2
-      },
-      {
-        filename = "__base__/sound/walking/concrete-02.ogg",
-        volume = 1.2
-      },
-      {
-        filename = "__base__/sound/walking/concrete-03.ogg",
-        volume = 1.2
-      },
-      {
-        filename = "__base__/sound/walking/concrete-04.ogg",
-        volume = 1.2
-      }
-    },
+    walking_sound = walking_sound_base,
     map_color={r=100, g=100, b=100},
     ageing=0,
     vehicle_friction_modifier = concrete_vehicle_speed_modifier
@@ -113,51 +121,13 @@ data:extend(
           probability = 1,
         },
       },
-      inner_corner =
-      {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-inner-corner.png",
-        count = 8
-      },
-      outer_corner =
-      {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-outer-corner.png",
-        count = 8
-      },
-      side =
-      {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-side.png",
-        count = 8
-      },
-      u_transition =
-      {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-u.png",
-        count = 8
-      },
-      o_transition =
-      {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-o.png",
-        count = 1
-      }
+      inner_corner = inner_corner_base,
+      outer_corner = outer_corner_base,
+      side = side_base,
+      u_transition = u_transition_base,
+      o_transition = o_transition_base,
     },
-    walking_sound =
-    {
-      {
-        filename = "__base__/sound/walking/concrete-01.ogg",
-        volume = 1.2
-      },
-      {
-        filename = "__base__/sound/walking/concrete-02.ogg",
-        volume = 1.2
-      },
-      {
-        filename = "__base__/sound/walking/concrete-03.ogg",
-        volume = 1.2
-      },
-      {
-        filename = "__base__/sound/walking/concrete-04.ogg",
-        volume = 1.2
-      }
-    },
+    walking_sound = walking_sound_base,
     map_color={r=100, g=100, b=100},
     ageing=0,
     vehicle_friction_modifier = concrete_vehicle_speed_modifier
@@ -194,51 +164,13 @@ data:extend(
           probability = 1,
         },
       },
-      inner_corner =
-      {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-inner-corner.png",
-        count = 8
-      },
-      outer_corner =
-      {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-outer-corner.png",
-        count = 8
-      },
-      side =
-      {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-side.png",
-        count = 8
-      },
-      u_transition =
-      {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-u.png",
-        count = 8
-      },
-      o_transition =
-      {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-o.png",
-        count = 1
-      }
+      inner_corner = inner_corner_base,
+      outer_corner = outer_corner_base,
+      side = side_base,
+      u_transition = u_transition_base,
+      o_transition = o_transition_base,
     },
-    walking_sound =
-    {
-      {
-        filename = "__base__/sound/walking/concrete-01.ogg",
-        volume = 1.2
-      },
-      {
-        filename = "__base__/sound/walking/concrete-02.ogg",
-        volume = 1.2
-      },
-      {
-        filename = "__base__/sound/walking/concrete-03.ogg",
-        volume = 1.2
-      },
-      {
-        filename = "__base__/sound/walking/concrete-04.ogg",
-        volume = 1.2
-      }
-    },
+    walking_sound = walking_sound_base,
     map_color={r=100, g=100, b=100},
     ageing=0,
     vehicle_friction_modifier = concrete_vehicle_speed_modifier
