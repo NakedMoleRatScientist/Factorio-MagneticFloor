@@ -34,27 +34,27 @@ data:extend(
       },
       inner_corner =
       {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-inner-corner.png",
+        picture = "__base__/graphics/terrain/concrete/concrete-inner-corner.png",
         count = 8
       },
       outer_corner =
       {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-outer-corner.png",
+        picture = "__base__/graphics/terrain/concrete/concrete-outer-corner.png",
         count = 8
       },
       side =
       {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-side.png",
+        picture = "__base__/graphics/terrain/concrete/concrete-side.png",
         count = 8
       },
       u_transition =
       {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-u.png",
+        picture = "__base__/graphics/terrain/concrete/concrete-u.png",
         count = 8
       },
       o_transition =
       {
-        picture = "__MagneticFloor__/graphics/copper-floor/concrete-o.png",
+        picture = "__base__/graphics/terrain/concrete/concrete-o.png",
         count = 1
       }
     },
