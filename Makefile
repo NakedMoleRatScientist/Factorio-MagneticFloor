@@ -7,3 +7,6 @@ build:
 
 clean:
 	rm -r $(PROJECT)
+
+copy:
+	cp $(PROJECT).zip ~/Library/Application\ Support/factorio/mods/
