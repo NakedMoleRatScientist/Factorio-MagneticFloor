@@ -10,3 +10,8 @@ clean:
 
 copy:
 	cp $(PROJECT).zip ~/Library/Application\ Support/factorio/mods/
+
+cycle:
+	make build
+	make copy
+	make clean
