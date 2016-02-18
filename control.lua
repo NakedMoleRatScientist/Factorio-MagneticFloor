@@ -1,6 +1,8 @@
 require 'util'
 require 'defines'
 
+
+
 script.on_event(defines.events.on_tick, function(event)
   tile = game.player.surface.get_tile(game.player.position["x"],game.player.position["y"])
   local count =  0
@@ -24,3 +26,7 @@ script.on_event(defines.events.on_tick, function(event)
   end
 
 end)
+
+function initializeGUI()
+  game.player.gui.top.add{type="button", name="foo", caption="Hello world"} -- adds the button to the top flow
+end
