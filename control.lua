@@ -1,11 +1,24 @@
 require 'util'
 require 'defines'
 
+function setup()
+  global.hoverboard = global.hoverboard or {status = false}
+end
 
+script.on_init(setup)
+
+script.on_load(setup)
 
 script.on_event(defines.events.on_tick, function(event)
   manualHoverMode()
   initializeGUI()
+end)
+
+script.on_event(defines.events.on_gui_click,function(event)
+  if global.hoverboard.status == false then
+    global.hoverboard.status = true
+    updateGUI()
+  end
 end)
 
 function manualHoverMode()
@@ -33,6 +46,19 @@ end
 
 function initializeGUI()
   if game.player.gui.top.hoverboard == nil then
-    game.player.gui.top.add{type="button", name="hoverboard", caption="Hoverboard Status"} -- adds the button to the top flow
+    game.player.gui.top.add{type="button", name="hoverboard", caption="Hoverboard Status: Inactive"} -- adds the button to the top flow
   end
+end
+
+function updateGUI()
+  if global.hoverboard.status == true then
+    game.player.gui.top.hoverboard.caption = "Hoverboard Status: Active"
+  end
+end
+
+function activeButton()
+  game.player.gui.top.hoverboard.caption = "Hoverboard Status: Active"
+end
+
+function activeHoverMode()
 end
