@@ -10,13 +10,16 @@ script.on_init(setup)
 script.on_load(setup)
 
 script.on_event(defines.events.on_tick, function(event)
-  manualHoverMode()
+  hoverMode()
   initializeGUI()
 end)
 
 script.on_event(defines.events.on_gui_click,function(event)
   if global.hoverboard.status == false then
     global.hoverboard.status = true
+    updateGUI()
+  elseif global.hoverboard.status == true then
+    global.hoverboard.status = false
     updateGUI()
   end
 end)
@@ -53,6 +56,8 @@ end
 function updateGUI()
   if global.hoverboard.status == true then
     game.player.gui.top.hoverboard.caption = "Hoverboard Status: Active"
+  elseif global.hoverboard.status == false then
+    game.player.gui.top.hoverboard.caption = "Hoverboard Status: Inactive"
   end
 end
 
@@ -61,4 +66,13 @@ function activeButton()
 end
 
 function activeHoverMode()
+
+end
+
+function hoverMode()
+  if global.hoverboard.status == true then
+    activeHoverMode()
+  else
+    manualHoverMode()
+  end
 end
