@@ -3,6 +3,7 @@ require 'defines'
 
 function setup()
   global.hoverboard = global.hoverboard or {status = false}
+  global.vehicle = global.vehicle or nil
 end
 
 script.on_init(setup)
@@ -23,6 +24,13 @@ script.on_event(defines.events.on_gui_click,function(event)
     updateGUI()
   end
 end)
+
+function activeHoverMode ()
+  if game.player.vehicle == nil then
+    global.vehicle = game.player.surface.create_entity({name="hoverboard-vehicle", force=game.player.force, position=game.player.position, direction=game.player.character.direction})
+    game.player.driving = true
+  end
+end
 
 function manualHoverMode()
   local tile = game.player.surface.get_tile(game.player.position["x"],game.player.position["y"])
@@ -65,14 +73,17 @@ function activeButton()
   game.player.gui.top.hoverboard.caption = "Hoverboard Status: Active"
 end
 
-function activeHoverMode()
-
+function removeHoverboard()
+  if game.player.vehicle ~= nil then
+    global.vehicle.destroy()
+  end
 end
 
 function hoverMode()
   if global.hoverboard.status == true then
     activeHoverMode()
   else
+    removeHoverboard()
     manualHoverMode()
   end
 end

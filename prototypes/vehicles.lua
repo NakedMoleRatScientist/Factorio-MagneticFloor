@@ -1,10 +1,9 @@
 data:extend({
   {
     type = "car",
-    name = "mini-borer",
+    name = "hoverboard-vehicle",
     icon = "__base__/graphics/icons/car.png",
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "mini-borer"},
     max_health = 1500,
     corpse = "medium-remnants",
     dying_explosion = "medium-explosion",
