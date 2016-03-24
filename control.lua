@@ -16,12 +16,14 @@ script.on_event(defines.events.on_tick, function(event)
 end)
 
 script.on_event(defines.events.on_gui_click,function(event)
-  if global.hoverboard.status == false then
-    global.hoverboard.status = true
-    updateGUI()
-  elseif global.hoverboard.status == true then
-    global.hoverboard.status = false
-    updateGUI()
+  if event.element.name == "hoverboard" then
+    if global.hoverboard.status == false then
+      global.hoverboard.status = true
+      updateGUI()
+    elseif global.hoverboard.status == true then
+      global.hoverboard.status = false
+      updateGUI()
+    end
   end
 end)
 
