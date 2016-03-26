@@ -29,7 +29,7 @@ end)
 function activeHoverMode ()
 end
 
-function manualHoverMode()
+function limitHoverboard()
   local tile = game.player.surface.get_tile(game.player.position["x"],game.player.position["y"])
   local count =  0
   --http://www.factorioforums.com/forum/viewtopic.php?f=25&t=16571
