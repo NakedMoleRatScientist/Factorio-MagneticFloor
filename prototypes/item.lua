@@ -49,5 +49,18 @@ data:extend({
     flags = {"goes-to-main-inventory"},
     stack_size = 10
   },
-
+  {
+    type = 'item',
+    name = 'accelerator',
+    icon = "__MagneticFloor__/graphics/icons/copper-floor-icon_level3.png",
+    flags = {"goes-to-quickbar"},
+    place_as_tile =
+    {
+      result = "copper-floor3",
+      condition_size = 4,
+      condition = { "water-tile" }
+    },
+    stack_size = 50,
+    order = "b[concrete]"
+  },
 })

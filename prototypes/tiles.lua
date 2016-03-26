@@ -174,5 +174,31 @@ data:extend(
     map_color={r=100, g=100, b=100},
     ageing=0,
     vehicle_friction_modifier = concrete_vehicle_speed_modifier
+  },
+  {
+    type = "tile",
+    name = "accelerator",
+    variants =
+    {
+      main = {
+        {
+          picture = "__MagneticFloor__/graphics/directives/accelerator.png",
+          count = 1,
+          size = 1,
+          probability = 1
+        },
+      },
+      inner_corner = inner_corner_base,
+      outer_corner = outer_corner_base,
+      side = side_base,
+    },
+    needs_correction = false,
+    minable = {hardness = 0.2, mining_time = 0.5, result = "accelerator"},
+    mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+    collision_mask = {"player-layer"},
+    layer = 61,
+    decorative_removal_probability = 0.9,
+    map_color={r=100, g=100, b=100},
+    ageing = 0,
   }
 })
