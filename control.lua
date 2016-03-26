@@ -76,7 +76,7 @@ function activeButton()
 end
 
 function removeHoverboard()
-  if game.player.vehicle ~= nil then
+  if game.player.vehicle ~= nil and game.player.vehicle.name == "hoverboard-vehicle" then
     global.vehicle.destroy()
   end
 end
