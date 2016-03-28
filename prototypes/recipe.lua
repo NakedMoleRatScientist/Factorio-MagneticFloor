@@ -50,5 +50,16 @@ data:extend({
     subgroup = 'magnetic-equipment',
     result = "hoverboard"
   },
-
+  {
+    type = "recipe",
+    name = "accelerator",
+    enabled = true,
+    ingredients =
+    {
+      {"copper-plate",20},
+      {"battery", 5}
+    },
+    subgroup = "magnetic-floor",
+    result = "accelerator"
+  }
 })
