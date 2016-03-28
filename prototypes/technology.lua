@@ -110,5 +110,34 @@ data:extend({
       }
     },
     order = "[h]"
+  },
+  {
+    type = "technology",
+    name = "accelerator",
+    icon = "__MagneticFloor__/graphics/directives/accelerator.png",
+    prerequisites =
+    {
+      "copper-floor3",
+    },
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "accelerator",
+
+      }
+    },
+    unit =
+    {
+      count = 150,
+      time = 60,
+      ingredients =
+      {
+        {"science-pack-1",3},
+        {"science-pack-2",3},
+        {"science-pack-3",3}
+      }
+    },
+    order = "[h]"
   }
 })
