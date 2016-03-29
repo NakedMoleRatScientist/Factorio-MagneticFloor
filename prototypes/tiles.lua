@@ -200,5 +200,109 @@ data:extend(
     decorative_removal_probability = 0.9,
     map_color={r=100, g=100, b=100},
     ageing = 0,
+  },
+  {
+    type = "tile",
+    name = "right",
+    variants =
+    {
+      main = {
+        {
+          picture = "__MagneticFloor__/graphics/directives/right.png",
+          count = 1,
+          size = 1,
+          probability = 1
+        },
+      },
+      inner_corner = inner_corner_base,
+      outer_corner = outer_corner_base,
+      side = side_base,
+    },
+    needs_correction = false,
+    minable = {hardness = 0.2, mining_time = 0.5, result = "accelerator"},
+    mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+    collision_mask = {"player-layer"},
+    layer = 61,
+    decorative_removal_probability = 0.9,
+    map_color={r=100, g=100, b=100},
+    ageing = 0,
+  },
+  {
+    type = "tile",
+    name = "left",
+    variants =
+    {
+      main = {
+        {
+          picture = "__MagneticFloor__/graphics/directives/left.png",
+          count = 1,
+          size = 1,
+          probability = 1
+        },
+      },
+      inner_corner = inner_corner_base,
+      outer_corner = outer_corner_base,
+      side = side_base,
+    },
+    needs_correction = false,
+    minable = {hardness = 0.2, mining_time = 0.5, result = "accelerator"},
+    mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+    collision_mask = {"player-layer"},
+    layer = 61,
+    decorative_removal_probability = 0.9,
+    map_color={r=100, g=100, b=100},
+    ageing = 0,
+  },
+  {
+    type = "tile",
+    name = "down",
+    variants =
+    {
+      main = {
+        {
+          picture = "__MagneticFloor__/graphics/directives/down.png",
+          count = 1,
+          size = 1,
+          probability = 1
+        },
+      },
+      inner_corner = inner_corner_base,
+      outer_corner = outer_corner_base,
+      side = side_base,
+    },
+    needs_correction = false,
+    minable = {hardness = 0.2, mining_time = 0.5, result = "accelerator"},
+    mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+    collision_mask = {"player-layer"},
+    layer = 61,
+    decorative_removal_probability = 0.9,
+    map_color={r=100, g=100, b=100},
+    ageing = 0,
+  },
+  {
+    type = "tile",
+    name = "up",
+    variants =
+    {
+      main = {
+        {
+          picture = "__MagneticFloor__/graphics/directives/up.png",
+          count = 1,
+          size = 1,
+          probability = 1
+        },
+      },
+      inner_corner = inner_corner_base,
+      outer_corner = outer_corner_base,
+      side = side_base,
+    },
+    needs_correction = false,
+    minable = {hardness = 0.2, mining_time = 0.5, result = "accelerator"},
+    mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+    collision_mask = {"player-layer"},
+    layer = 61,
+    decorative_removal_probability = 0.9,
+    map_color={r=100, g=100, b=100},
+    ageing = 0,
   }
 })
