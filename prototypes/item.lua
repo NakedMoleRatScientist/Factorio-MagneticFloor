@@ -56,7 +56,7 @@ data:extend({
     flags = {"goes-to-quickbar"},
     place_as_tile =
     {
-      result = "Accelerator",
+      result = "accelerator",
       condition_size = 4,
       condition = { "water-tile" }
     },
