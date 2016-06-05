@@ -52,11 +52,11 @@ data:extend({
   {
     type = 'item',
     name = 'accelerator',
-    icon = "__MagneticFloor__/graphics/icons/copper-floor-icon_level3.png",
+    icon = "__MagneticFloor__/graphics/directives/Accelerator.png",
     flags = {"goes-to-quickbar"},
     place_as_tile =
     {
-      result = "copper-floor3",
+      result = "Accelerator",
       condition_size = 4,
       condition = { "water-tile" }
     },
