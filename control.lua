@@ -2,6 +2,8 @@ require 'util'
 require 'defines'
 
 function setup()
+  global.hoverboard = global.hoverboard or {}
+
 end
 
 script.on_init(setup)
@@ -10,8 +12,8 @@ script.on_load(setup)
 
 script.on_event(defines.events.on_tick, function(event)
 --  game.player.walking_state = {walking = true, direction = defines.direction.north}
-  hoverMode()
   initializeGUI()
+  hoverMode()
 end)
 
 script.on_event(defines.events.on_gui_click,function(event)
