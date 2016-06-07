@@ -3,7 +3,9 @@ require 'defines'
 
 function setup()
   global.hoverboard = global.hoverboard or {}
-
+  if global.hoverboard.status == nil then
+    global.hoverboard.status = false
+  end
 end
 
 script.on_init(setup)
@@ -57,6 +59,7 @@ end
 function initializeGUI()
   if game.player.gui.top.hoverboard == nil then
     game.player.gui.top.add{type="button", name="hoverboard", caption="Hoverboard Status: Inactive"} -- adds the button to the top flow
+    global.hoverboard.status = false
   end
 end
 
@@ -74,5 +77,13 @@ end
 
 function hoverMode()
   if global.hoverboard.status == true then
+    tileCheck()
+  end
+end
+
+function tileCheck()
+  local tile = game.player.surface.get_tile(game.player.position.x,game.player.position.y)
+  if tile.name == "accelerator" then
+    game.player.print("boop")
   end
 end
