@@ -3,6 +3,7 @@ require 'defines'
 
 function setup()
   global.hoverboard = global.hoverboard or {}
+  global.charge = global.charge or 0
   if global.hoverboard.status == nil then
     global.hoverboard.status = false
   end
