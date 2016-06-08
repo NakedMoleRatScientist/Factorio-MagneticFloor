@@ -85,6 +85,8 @@ end
 function tileCheck()
   local tile = game.player.surface.get_tile(game.player.position.x,game.player.position.y)
   if tile.name == "accelerator" then
-    game.player.print("boop")
+    if global.charge <= 40 then
+      global.charge = global.charge + 10
+    end
   end
 end
