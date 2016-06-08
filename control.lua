@@ -14,11 +14,6 @@ script.on_init(setup)
 script.on_load(setup)
 
 script.on_event(defines.events.on_tick, function(event)
-  local orientation = game.player.walking_state.direction
-  if global.charge > 0 then
-    global.charge = global.charge - 1
-    game.player.walking_state = {walking = true, direction = orientation}
-  end
   initializeGUI()
   hoverMode()
 end)
@@ -35,7 +30,12 @@ script.on_event(defines.events.on_gui_click,function(event)
   end
 end)
 
-function activeHoverMode ()
+function activeHoverMode()
+  local orientation = game.player.walking_state.direction
+  if global.charge > 0 then
+    global.charge = global.charge - 1
+    game.player.walking_state = {walking = true, direction = orientation}
+  end
 end
 
 function limitHoverboard()
@@ -82,6 +82,7 @@ end
 
 function hoverMode()
   if global.hoverboard.status == true then
+    activeHoverMode()
     tileCheck()
   end
 end
