@@ -14,7 +14,11 @@ script.on_init(setup)
 script.on_load(setup)
 
 script.on_event(defines.events.on_tick, function(event)
---  game.player.walking_state = {walking = true, direction = defines.direction.north}
+  local orientation = game.player.walking_state.direction
+  if global.charge > 0 then
+    global.charge = global.charge - 1
+    game.player.walking_state = {walking = true, direction = orientation}
+  end
   initializeGUI()
   hoverMode()
 end)
