@@ -23,7 +23,7 @@ script.on_event(defines.events.on_tick, function(event)
 end)
 
 script.on_event(defines.events.on_gui_click,function(event)
-  if event.element.name == "hoverboard" then
+  if event.element.name == "mode" then
     if global.hoverboard.status == false then
       global.hoverboard.status = true
       updateGUI()
@@ -69,16 +69,17 @@ function initializeGUI()
   if game.player.gui.top.hoverboard ~= nil then
     game.player.gui.top.hoverboard.destroy()
   end
-  game.player.gui.top.add{type="button", name="hoverboard", caption="Hoverboard Status: Inactive"}
+  game.player.gui.top.add{type="frame", name="hoverboard"}
+  game.player.gui.top.hoverboard.add{type="button",name="mode", caption = "Hoverboard Status: Inactive"}
   game.player.gui.top.hoverboard.add{type="label",name="charge"}
   global.hoverboard.status = false
 end
 
 function updateGUI()
   if global.hoverboard.status == true then
-    game.player.gui.top.hoverboard.caption = "Hoverboard Status: Active"
+    game.player.gui.top.hoverboard.mode.caption = "Hoverboard Status: Active"
   elseif global.hoverboard.status == false then
-    game.player.gui.top.hoverboard.caption = "Hoverboard Status: Inactive"
+    game.player.gui.top.hoverboard.mode.caption = "Hoverboard Status: Inactive"
   end
 end
 
