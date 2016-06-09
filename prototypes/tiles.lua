@@ -221,7 +221,7 @@ data:extend(
     needs_correction = false,
     minable = {hardness = 0.2, mining_time = 0.5, result = "accelerator"},
     mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
-    collision_mask = {"player-layer"},
+    collision_mask = {"ground-tile"},
     layer = 61,
     decorative_removal_probability = 0.9,
     map_color={r=100, g=100, b=100},
