@@ -73,5 +73,41 @@ data:extend({
     },
     subgroup = "magnetic-floor",
     result = "right"
+  },
+  {
+    type = "recipe",
+    name = "down",
+    enabled = true,
+    ingredients =
+    {
+      {"copper-plate",20},
+      {"battery", 5}
+    },
+    subgroup = "magnetic-floor",
+    result = "down"
+  },
+  {
+    type = "recipe",
+    name = "left",
+    enabled = true,
+    ingredients =
+    {
+      {"copper-plate",20},
+      {"battery", 5}
+    },
+    subgroup = "magnetic-floor",
+    result = "left"
+  },
+  {
+    type = "recipe",
+    name = "up",
+    enabled = true,
+    ingredients =
+    {
+      {"copper-plate",20},
+      {"battery", 5}
+    },
+    subgroup = "magnetic-floor",
+    result = "up"
   }
 })

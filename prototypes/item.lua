@@ -77,4 +77,46 @@ data:extend({
     stack_size = 50,
     order = "b[concrete]"
   },
+  {
+    type = 'item',
+    name = 'down',
+    icon = "__MagneticFloor__/graphics/directives/down.png",
+    flags = {"goes-to-quickbar"},
+    place_as_tile =
+    {
+      result = "down",
+      condition_size = 4,
+      condition = { "water-tile" }
+    },
+    stack_size = 50,
+    order = "b[concrete]"
+  },
+  {
+    type = 'item',
+    name = 'left',
+    icon = "__MagneticFloor__/graphics/directives/left.png",
+    flags = {"goes-to-quickbar"},
+    place_as_tile =
+    {
+      result = "left",
+      condition_size = 4,
+      condition = { "water-tile" }
+    },
+    stack_size = 50,
+    order = "b[concrete]"
+  },
+  {
+    type = 'item',
+    name = 'up',
+    icon = "__MagneticFloor__/graphics/directives/up.png",
+    flags = {"goes-to-quickbar"},
+    place_as_tile =
+    {
+      result = "up",
+      condition_size = 4,
+      condition = { "water-tile" }
+    },
+    stack_size = 50,
+    order = "b[concrete]"
+  },
 })
