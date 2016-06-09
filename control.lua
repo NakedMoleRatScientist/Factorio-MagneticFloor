@@ -105,5 +105,8 @@ function tileCheck()
     if global.charge <= 40 then
       global.charge = global.charge + 10
     end
+  elseif tile.name == "down" then
+    game.player.print("boop")
+    game.player.walking_state.direction = defines.direction.south
   end
 end
