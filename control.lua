@@ -4,6 +4,7 @@ require 'defines'
 function setup()
   global.hoverboard = global.hoverboard or {}
   global.charge = global.charge or 0
+  global.tick = 0
   if global.hoverboard.status == nil then
     global.hoverboard.status = false
   end
@@ -14,7 +15,10 @@ script.on_init(setup)
 script.on_load(setup)
 
 script.on_event(defines.events.on_tick, function(event)
-  initializeGUI()
+  if global.tick == 0 then
+    initializeGUI()
+    global.tick = global.tick + 1
+  end
   hoverMode()
 end)
 
@@ -62,10 +66,12 @@ function limitHoverboard()
 end
 
 function initializeGUI()
-  if game.player.gui.top.hoverboard == nil then
-    game.player.gui.top.add{type="button", name="hoverboard", caption="Hoverboard Status: Inactive"} -- adds the button to the top flow
-    global.hoverboard.status = false
+  if game.player.gui.top.hoverboard ~= nil then
+    game.player.gui.top.hoverboard.destroy()
   end
+  game.player.gui.top.add{type="button", name="hoverboard", caption="Hoverboard Status: Inactive"}
+  game.player.gui.top.hoverboard.add{type="label",name="charge"}
+  global.hoverboard.status = false
 end
 
 function updateGUI()
@@ -76,14 +82,15 @@ function updateGUI()
   end
 end
 
-function activeButton()
-  game.player.gui.top.hoverboard.caption = "Hoverboard Status: Active"
+function updateStatusGUI()
+  game.player.gui.top.hoverboard.charge.caption = "Charge: "..global.charge
 end
 
 function hoverMode()
   if global.hoverboard.status == true then
     activeHoverMode()
     tileCheck()
+    updateStatusGUI()
   end
 end
 
