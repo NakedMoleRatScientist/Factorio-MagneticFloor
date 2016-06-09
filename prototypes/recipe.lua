@@ -61,5 +61,17 @@ data:extend({
     },
     subgroup = "magnetic-floor",
     result = "accelerator"
+  },
+  {
+    type = "recipe",
+    name = "right",
+    enabled = true,
+    ingredients =
+    {
+      {"copper-plate",20},
+      {"battery", 5}
+    },
+    subgroup = "magnetic-floor",
+    result = "right"
   }
 })
