@@ -14,6 +14,10 @@ script.on_init(setup)
 
 script.on_load(setup)
 
+function getTile()
+  return game.player.surface.get_tile(game.player.position.x,game.player.position.y)
+end
+
 script.on_event(defines.events.on_tick, function(event)
   if global.tick == 0 then
     initializeGUI()
@@ -43,7 +47,7 @@ function activeHoverMode()
 end
 
 function limitHoverboard()
-  local tile = game.player.surface.get_tile(game.player.position["x"],game.player.position["y"])
+  local tile = getTile()
   local count =  0
   --http://www.factorioforums.com/forum/viewtopic.php?f=25&t=16571
   local armor = game.player.get_inventory(defines.inventory.player_armor)[1]
@@ -96,7 +100,7 @@ function hoverMode()
 end
 
 function tileCheck()
-  local tile = game.player.surface.get_tile(game.player.position.x,game.player.position.y)
+  local tile = getTile()
   if tile.name == "accelerator" then
     if global.charge <= 40 then
       global.charge = global.charge + 10
