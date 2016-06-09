@@ -63,4 +63,18 @@ data:extend({
     stack_size = 50,
     order = "b[concrete]"
   },
+  {
+    type = 'item',
+    name = 'right',
+    icon = "__MagneticFloor__/graphics/directives/right.png",
+    flags = {"goes-to-quickbar"},
+    place_as_tile =
+    {
+      result = "right",
+      condition_size = 4,
+      condition = { "water-tile" }
+    },
+    stack_size = 50,
+    order = "b[concrete]"
+  },
 })
