@@ -101,12 +101,18 @@ end
 
 function tileCheck()
   local tile = getTile()
+  local walk = game.player.walking_state.walking
   if tile.name == "accelerator" then
     if global.charge <= 40 then
       global.charge = global.charge + 10
     end
   elseif tile.name == "down" then
-    local walk = game.player.walking_state.walking
     game.player.walking_state = {walking = walk, direction = defines.direction.south}
+  elseif tile.name == "up" then
+    game.player.walking_state = {walking = walk, direction = defines.direction.north}
+  elseif tile.name == "right" then
+    game.player.walking_state = {walking = walk, direction = defines.direction.east}
+  elseif tile.name == "left" then
+    game.player.walking_state = {walking = walk, direction = defines.direction.west}
   end
 end
