@@ -99,6 +99,17 @@ function hoverMode()
   end
 end
 
+function inboundTile(name)
+  local tiles = {"copper-floor", "copper-floor2", "copper-floor3"}
+  for _, tile in ipairs(tiles) do
+    if tile == name then
+      return true
+    end
+  end
+  return false
+end
+
+
 function tileCheck()
   local tile = getTile()
   local walk = game.player.walking_state.walking
@@ -114,5 +125,7 @@ function tileCheck()
     game.player.walking_state = {walking = walk, direction = defines.direction.east}
   elseif tile.name == "left" then
     game.player.walking_state = {walking = walk, direction = defines.direction.west}
+  elseif inboundTile(tile.name) == false then
+    global.charge = 0
   end
 end
