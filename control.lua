@@ -56,7 +56,7 @@ function limitHoverboard()
       local equipment = armor.grid.equipment
       for i,e in pairs(equipment) do
         if e.name =="hoverboard" then
-          if tile.name ~= "copper-floor" then
+          if inboundTile(tile.name) == false then
             e.energy = 0
           end
           if count > 0 then
@@ -92,6 +92,7 @@ function updateStatusGUI()
 end
 
 function hoverMode()
+  limitHoverboard()
   if global.hoverboard.status == true then
     activeHoverMode()
     tileCheck()
@@ -100,7 +101,7 @@ function hoverMode()
 end
 
 function inboundTile(name)
-  local tiles = {"copper-floor", "copper-floor2", "copper-floor3"}
+  local tiles = {"copper-floor", "copper-floor2", "copper-floor3","accelerator","down","left","up","right"}
   for _, tile in ipairs(tiles) do
     if tile == name then
       return true
