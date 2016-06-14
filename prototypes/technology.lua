@@ -139,5 +139,34 @@ data:extend({
       }
     },
     order = "[h]"
+  },
+  {
+    type = "technology",
+    name = "directives",
+    icon = "__MagneticFloor__/graphics/directives/left.png",
+    prerequisites =
+    {
+      "accelerator",
+    },
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "left","right","down","up"
+
+      }
+    },
+    unit =
+    {
+      count = 300,
+      time = 70,
+      ingredients =
+      {
+        {"science-pack-1",3},
+        {"science-pack-2",3},
+        {"science-pack-3",3}
+      }
+    },
+    order = "[h]"
   }
 })
