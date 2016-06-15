@@ -53,7 +53,7 @@ data:extend({
         {"science-pack-2",1}
       }
     },
-    order = "[h]"
+    order = "[c]"
   },
   {
     type = "technology",
@@ -81,7 +81,7 @@ data:extend({
         {"science-pack-2",2}
       }
     },
-    order = "[h]"
+    order = "[c]"
   },
   {
     type = "technology",
@@ -117,7 +117,7 @@ data:extend({
     icon = "__MagneticFloor__/graphics/directives/accelerator.png",
     prerequisites =
     {
-      "copper-floor3",
+      "copper-floor",
     },
     effects =
     {
@@ -138,7 +138,7 @@ data:extend({
         {"science-pack-3",3}
       }
     },
-    order = "[h]"
+    order = "[ca]"
   },
   {
     type = "technology",
@@ -167,6 +167,6 @@ data:extend({
         {"science-pack-3",3}
       }
     },
-    order = "[h]"
+    order = "[cd]"
   }
 })
