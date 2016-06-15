@@ -2,7 +2,7 @@ data:extend({
   {
     type = "recipe",
     name = "copper-floor",
-    enabled = "true",
+    enabled = "false",
     ingredients =
     {
       {"copper-plate",5},
@@ -15,7 +15,7 @@ data:extend({
   {
     type = "recipe",
     name = "copper-floor2",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {"copper-plate",10},
@@ -27,7 +27,7 @@ data:extend({
   {
     type = "recipe",
     name = "copper-floor3",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {"copper-plate",20},
@@ -39,7 +39,7 @@ data:extend({
   {
     type = "recipe",
     name = "hoverboard",
-    enabled = true,
+    enabled = false,
     energy_required = 10,
     ingredients =
     {
@@ -53,7 +53,7 @@ data:extend({
   {
     type = "recipe",
     name = "accelerator",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {"copper-plate",20},
@@ -65,7 +65,7 @@ data:extend({
   {
     type = "recipe",
     name = "right",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {"copper-plate",20},
@@ -77,7 +77,7 @@ data:extend({
   {
     type = "recipe",
     name = "down",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {"copper-plate",20},
@@ -89,7 +89,7 @@ data:extend({
   {
     type = "recipe",
     name = "left",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {"copper-plate",20},
@@ -101,7 +101,7 @@ data:extend({
   {
     type = "recipe",
     name = "up",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {"copper-plate",20},
