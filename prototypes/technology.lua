@@ -152,9 +152,20 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "left","right","down","up"
-
-      }
+        recipe = "left"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "right"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "down"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "up"
+      },
     },
     unit =
     {
