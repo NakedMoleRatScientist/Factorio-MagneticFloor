@@ -15,3 +15,6 @@ Version# 0.0.4(2016-02-06)
 * Add new copper floor level 2 and 3
 * Add corresponding icons from copper-floor all the way to level 3
 * Add technology upgrade for new copper flooring
+---
+Version# 0.0.5(2016-06-16)
+* Add automatic navigation via directives and accelerators.
