@@ -8,6 +8,7 @@ function setup()
   if global.hoverboard.status == nil then
     global.hoverboard.status = false
   end
+  global.dead = false
 end
 
 script.on_init(setup)
@@ -19,11 +20,19 @@ function getTile()
 end
 
 script.on_event(defines.events.on_tick, function(event)
-  if global.tick == 0 then
-    initializeGUI()
-    global.tick = global.tick + 1
+  if global.dead == false then
+    if global.tick == 0 then
+      initializeGUI()
+      global.tick = global.tick + 1
+    end
+    hoverMode()
   end
-  hoverMode()
+end)
+
+script.on_event(defines.events.on_entity_died, function(event)
+  if event.entity.name == "player" then
+    global.dead = true
+  end
 end)
 
 script.on_event(defines.events.on_gui_click,function(event)
