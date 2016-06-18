@@ -1,11 +1,9 @@
 
 ## Zipping around
 
-Coupled with a conductive floor and some magnetism SCIENCE!, you too could zip around in a hoverboard, back to the future style.
+The most basic feature of this mod is the conductive floors(known as copper floors) that allowed faster movement. For best speed movement bonus, equip yourself with a hoverboard.
 
-Build conductive floor and it will be slightly faster than walking on concrete. However, to get the full benefit, build the hoverboard and equip it in your armor for even faster movement.
-
-With directives, you can zip around the base automatically.
+You can also move around the base automatically if you have accelerators to charge your hoverboard, directives to direct your movement, and conductive floors to serve as pathways throughout your base.
 
 ## Copyright Notice
 
