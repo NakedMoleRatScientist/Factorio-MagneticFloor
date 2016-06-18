@@ -18,3 +18,6 @@ Version# 0.0.4(2016-02-06)
 ---
 Version# 0.0.5(2016-06-16)
 * Add automatic navigation via directives and accelerators.
+---
+Version# 0.0.6(2016-06-18)
+* Eliminate a crash that is caused by player dying.
