@@ -11,7 +11,7 @@ Make sure that you are equipped with a hoverboard in your armor's module invento
 
 To start with, your hoverboard has a charge of zero, meaning that it will not move you. If you do have a charge, it will tick down to zero every tick, or that you are no longer on any conductive flooring.
 
-You must place an accelerator to charge your hoverboard. This will give you an additional twenty charges.
+You must place an accelerator ![Accelerator](/graphics/direcives/Accelerator.png) to charge your hoverboard. This will give you an additional twenty charges.
 
 Use directive tiles to direct the movement of your hoverboard.
 
