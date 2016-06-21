@@ -52,7 +52,7 @@ data:extend({
   {
     type = 'item',
     name = 'accelerator',
-    icon = "__MagneticFloor__/graphics/directives/Accelerator.png",
+    icon = "__MagneticFloor__/graphics/directives/accelerator.png",
     flags = {"goes-to-quickbar"},
     place_as_tile =
     {
