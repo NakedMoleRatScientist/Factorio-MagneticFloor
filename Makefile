@@ -1,4 +1,4 @@
-PROJECT := "MagneticFloor_0.0.6"
+PROJECT := "MagneticFloor_0.0.7"
 
 build:
 	mkdir $(PROJECT)
