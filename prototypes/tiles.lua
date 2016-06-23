@@ -240,7 +240,7 @@ data:extend(
       max_sounds_per_type = 5
     },
   },
---[[  {
+  {
     type = "tile",
     name = "accelerator",
     variants =
@@ -265,7 +265,7 @@ data:extend(
     decorative_removal_probability = 0.9,
     map_color={r=100, g=100, b=100},
     ageing = 0,
-  },]]--
+  },
   {
     type = "tile",
     name = "right",
