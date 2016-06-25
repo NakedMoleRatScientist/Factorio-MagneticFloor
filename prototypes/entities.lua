@@ -1,10 +1,10 @@
 data:extend({
   {
     type = "accumulator",
-    name = "accelerator",
+    name = "accelerator_charger",
     icon = "__base__/graphics/entity/basic-accumulator/basic-accumulator.png",
     flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "accelerator"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "accelerator_charger"},
     max_health = 150,
     corpse = "medium-remnants",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
