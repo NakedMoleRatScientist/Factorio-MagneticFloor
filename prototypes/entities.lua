@@ -2,7 +2,7 @@ data:extend({
   {
     type = "accumulator",
     name = "accelerator",
-    icon = "__MagneticFloor__/graphics/directives/accelerator.png",
+    icon = "__base__/graphics/entity/basic-accumulator/basic-accumulator.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "accelerator"},
     max_health = 150,
@@ -19,7 +19,7 @@ data:extend({
     },
     picture =
     {
-      filename = "__MagneticFloor__/graphics/directives/accelerator.png",
+      filename = "__base__/graphics/entity/basic-accumulator/basic-accumulator.png",
       priority = "extra-high",
       width = 124,
       height = 103,
