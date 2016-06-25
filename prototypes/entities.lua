@@ -5,6 +5,7 @@ data:extend({
     icon = "__base__/graphics/entity/basic-accumulator/basic-accumulator.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = false,
+    indestructible = true,
     max_health = 150,
     corpse = "medium-remnants",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
