@@ -23,7 +23,7 @@ end
 script.on_event(defines.events.on_tick, function(event)
   if global.dead == false then
     if global.tick == 0 then
-      initializeGUI()
+      UI.initializeGUI()
       global.tick = global.tick + 1
     end
     hoverMode()

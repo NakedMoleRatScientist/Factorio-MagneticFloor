@@ -1,4 +1,7 @@
-function initializeGUI()
+UI = {}
+
+
+function UI.initializeGUI()
   if game.player.gui.top.hoverboard ~= nil then
     game.player.gui.top.hoverboard.destroy()
   end
