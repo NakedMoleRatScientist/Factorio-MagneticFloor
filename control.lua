@@ -48,6 +48,13 @@ script.on_event(defines.events.on_gui_click,function(event)
   end
 end)
 
+script.on_event(defines.events.on_built_entity,function(event)
+  if event.created_entity.name == "accelerator" then
+    game.player.print("beep")
+  end
+end)
+
+
 function activeHoverMode()
   local orientation = game.player.walking_state.direction
   if global.charge > 0 then
