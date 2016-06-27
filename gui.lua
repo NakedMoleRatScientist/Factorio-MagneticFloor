@@ -14,3 +14,11 @@ end
 function UI.updateStatus()
   game.player.gui.top.hoverboard.charge.caption = "Charge: "..global.charge
 end
+
+function updateGUI()
+  if global.hoverboard.status == true then
+    game.player.gui.top.hoverboard.mode.caption = "Hoverboard Status: Active"
+  elseif global.hoverboard.status == false then
+    game.player.gui.top.hoverboard.mode.caption = "Hoverboard Status: Inactive"
+  end
+end
