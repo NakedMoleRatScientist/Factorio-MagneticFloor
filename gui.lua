@@ -10,3 +10,7 @@ function UI.initializeGUI()
   game.player.gui.top.hoverboard.add{type="label",name="charge"}
   global.hoverboard.status = false
 end
+
+function UI.updateStatusGUI()
+  game.player.gui.top.hoverboard.charge.caption = "Charge: "..global.charge
+end

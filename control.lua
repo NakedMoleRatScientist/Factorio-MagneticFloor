@@ -71,15 +71,13 @@ function updateGUI()
   end
 end
 
-function updateStatusGUI()
-  game.player.gui.top.hoverboard.charge.caption = "Charge: "..global.charge
-end
+
 
 function hoverMode()
   if global.hoverboard.status == true then
     activeHoverMode()
     tileCheck()
-    updateStatusGUI()
+    Ui.updateStatusGUI()
   end
 end
 
