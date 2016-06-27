@@ -23,7 +23,7 @@ end
 script.on_event(defines.events.on_tick, function(event)
   if global.dead == false then
     if global.tick == 0 then
-      UI.initializeGUI()
+      UI.initialize()
       global.tick = global.tick + 1
     end
     hoverMode()
@@ -77,7 +77,7 @@ function hoverMode()
   if global.hoverboard.status == true then
     activeHoverMode()
     tileCheck()
-    Ui.updateStatusGUI()
+    Ui.updateStatus()
   end
 end
 

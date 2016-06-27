@@ -1,7 +1,7 @@
 UI = {}
 
 
-function UI.initializeGUI()
+function UI.initialize()
   if game.player.gui.top.hoverboard ~= nil then
     game.player.gui.top.hoverboard.destroy()
   end
@@ -11,6 +11,6 @@ function UI.initializeGUI()
   global.hoverboard.status = false
 end
 
-function UI.updateStatusGUI()
+function UI.updateStatus()
   game.player.gui.top.hoverboard.charge.caption = "Charge: "..global.charge
 end
