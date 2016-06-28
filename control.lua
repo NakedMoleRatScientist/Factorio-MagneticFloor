@@ -1,5 +1,4 @@
 require 'util'
-require 'defines'
 require 'gui'
 
 function setup()
