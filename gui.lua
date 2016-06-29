@@ -10,7 +10,6 @@ function UI.initialize()
     gui.top.add{type="frame", name="hoverboard"}
     gui.top.hoverboard.add{type="button",name="mode", caption = "Hoverboard Status: Inactive"}
     gui.top.hoverboard.add{type="label",name="charge"}
-    global.hoverboard.status = false
   end
 end
 
