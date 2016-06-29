@@ -2,13 +2,16 @@ UI = {}
 
 
 function UI.initialize()
-  if game.player.gui.top.hoverboard ~= nil then
-    game.player.gui.top.hoverboard.destroy()
+  for _, player in pairs(game.players) do
+    local gui = player.gui
+    if gui.top.hoverboard ~= nil then
+      gui.top.hoverboard.destroy()
+    end
+    gui.top.add{type="frame", name="hoverboard"}
+    gui.top.hoverboard.add{type="button",name="mode", caption = "Hoverboard Status: Inactive"}
+    gui.top.hoverboard.add{type="label",name="charge"}
+    global.hoverboard.status = false
   end
-  game.player.gui.top.add{type="frame", name="hoverboard"}
-  game.player.gui.top.hoverboard.add{type="button",name="mode", caption = "Hoverboard Status: Inactive"}
-  game.player.gui.top.hoverboard.add{type="label",name="charge"}
-  global.hoverboard.status = false
 end
 
 function UI.updateStatus()
