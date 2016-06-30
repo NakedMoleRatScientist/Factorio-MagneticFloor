@@ -2,7 +2,6 @@ require 'util'
 require 'gui'
 
 function setup()
-  
   global.hoverboard = global.hoverboard or {}
   global.charge = global.charge or 0
   global.tick = 0
@@ -27,7 +26,7 @@ script.on_event(defines.events.on_tick, function(event)
   --    global.tick = global.tick + 1
   --  end
     -- hoverMode()
-  end
+  --end
 end)
 
 script.on_event(defines.events.on_entity_died, function(event)
