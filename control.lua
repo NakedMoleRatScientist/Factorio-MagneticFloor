@@ -1,6 +1,10 @@
 require 'util'
 require 'gui'
 
+function print(stuff)
+  game.players[1].print(stuff)
+end
+
 function setup()
   global.hoverboard = global.hoverboard or {}
   for _, player in pairs(game.players) do
@@ -18,7 +22,7 @@ function createPlayerMag(i)
   entity = {
     index = i,
   }
-  game.players[1].print(entity.index)
+  print(entity.index)
 end
 
 script.on_init(setup)
