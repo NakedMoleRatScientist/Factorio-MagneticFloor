@@ -3,12 +3,14 @@ require 'gui'
 
 function setup()
   global.hoverboard = global.hoverboard or {}
-  global.charge = global.charge or 0
-  global.tick = 0
-  if global.hoverboard.status == nil then
-    global.hoverboard.status = false
+  for _, player in pairs(game.players) do
+    --player.charge = player.charge or {}
+    -- global.tick = 0
+    --if global.hoverboard.status == nil then
+    --  global.hoverboard.status = false
+    -- end
+    --player.dead = false
   end
-  global.dead = false
 end
 
 script.on_init(setup)
