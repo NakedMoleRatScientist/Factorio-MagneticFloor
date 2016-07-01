@@ -4,6 +4,7 @@ require 'gui'
 function setup()
   global.hoverboard = global.hoverboard or {}
   for _, player in pairs(game.players) do
+    player.print(player.index)
     --player.charge = player.charge or {}
     -- global.tick = 0
     --if global.hoverboard.status == nil then
@@ -11,6 +12,13 @@ function setup()
     -- end
     --player.dead = false
   end
+end
+
+function createPlayerMag(i)
+  entity = {
+    index = i,
+  }
+  game.players[1].print(entity.index)
 end
 
 script.on_init(setup)
