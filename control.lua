@@ -8,7 +8,7 @@ end
 function setup()
   global.hoverboard = global.hoverboard or {}
   for _, player in pairs(game.players) do
-    player.print(player.index)
+    createPlayerMag(player.index)
     --player.charge = player.charge or {}
     -- global.tick = 0
     --if global.hoverboard.status == nil then
@@ -19,7 +19,7 @@ function setup()
 end
 
 function createPlayerMag(i)
-  entity = {
+  local entity = {
     index = i,
   }
   print(entity.index)
@@ -27,7 +27,7 @@ end
 
 script.on_init(setup)
 
-script.on_load(setup)
+script.on_load()
 
 function getTile()
   return game.player.surface.get_tile(game.player.position.x,game.player.position.y)
