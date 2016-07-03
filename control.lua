@@ -20,10 +20,10 @@ end
 
 function createPlayerMag(i)
   local entity = {
-    index = i,
     charge = 0,
     active = false
   }
+  global.hoverboard[i] = entity
 end
 
 script.on_init(setup)
