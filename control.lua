@@ -9,6 +9,7 @@ function setup()
   global.hoverboard = global.hoverboard or {}
   for _, player in pairs(game.players) do
     createPlayerMag(player.index)
+    UI.initialize(player.index)
     --player.charge = player.charge or {}
     -- global.tick = 0
     --if global.hoverboard.status == nil then
