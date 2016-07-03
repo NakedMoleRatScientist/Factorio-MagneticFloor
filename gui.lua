@@ -1,16 +1,14 @@
 UI = {}
 
 
-function UI.initialize()
-  for _, player in pairs(game.players) do
-    local gui = player.gui
-    if gui.top.hoverboard ~= nil then
-      gui.top.hoverboard.destroy()
-    end
-    gui.top.add{type="frame", name="hoverboard"}
-    gui.top.hoverboard.add{type="button",name="mode", caption = "Hoverboard Status: Inactive"}
-    gui.top.hoverboard.add{type="label",name="charge"}
+function UI.initialize(i)
+  local gui = game.players[i].gui
+  if gui.top.hoverboard ~= nil then
+    gui.top.hoverboard.destroy()
   end
+  gui.top.add{type="frame", name="hoverboard"}
+  gui.top.hoverboard.add{type="button",name="mode", caption = "Hoverboard Status: Inactive"}
+  gui.top.hoverboard.add{type="label",name="charge"}
 end
 
 function UI.updateStatus()
