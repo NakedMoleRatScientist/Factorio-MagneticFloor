@@ -21,13 +21,12 @@ end
 function createPlayerMag(i)
   local entity = {
     index = i,
+    charge = 0,
+    active = false
   }
-  print(entity.index)
 end
 
 script.on_init(setup)
-
-script.on_load()
 
 function getTile()
   return game.player.surface.get_tile(game.player.position.x,game.player.position.y)
