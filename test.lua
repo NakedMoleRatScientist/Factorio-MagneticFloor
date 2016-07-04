@@ -12,5 +12,6 @@ remote.add_interface("mag",
   getArmor = function()
     local p = game.players[1]
     p.insert{name = "power-armor-mk2", count = 1}
+    p.insert{name = "fusion-reactor-equipment", count = 1}
   end
 })
