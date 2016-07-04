@@ -43,6 +43,12 @@ script.on_event(defines.events.on_player_placed_equipment, function(event)
   end
 end)
 
+script.on_event(defines.events.on_player_removed_equipment, function(event)
+  if event.equipment.name == "hoverboard" then
+    print("hoverboard removed.")
+  end
+end)
+
 script.on_event(defines.events.on_entity_died, function(event)
   if event.entity.name == "player" then
     global.dead = true
