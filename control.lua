@@ -44,7 +44,7 @@ script.on_event(defines.events.on_player_placed_equipment, function(event)
 end)
 
 script.on_event(defines.events.on_player_removed_equipment, function(event)
-  if event.equipment.name == "hoverboard" then
+  if event.equipment == "hoverboard" then
     print("hoverboard removed.")
   end
 end)
