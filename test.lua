@@ -8,5 +8,9 @@ remote.add_interface("mag",
     game.players[1].insert{name = "right", count = 5}
     game.players[1].insert{name = "down", count = 5}
     game.players[1].insert{name = "up", count = 5}
+  end,
+  getArmor = function()
+    local p = game.players[1]
+    p.insert{name = "power-armor-mk2", count = 1}
   end
 })
