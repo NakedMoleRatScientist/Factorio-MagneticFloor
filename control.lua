@@ -39,7 +39,7 @@ end)
 
 script.on_event(defines.events.on_player_placed_equipment, function(event)
   if event.equipment.name == "hoverboard" then
-    print("hoverboard placed.")
+    UI.initialize(event.player_index)
   end
 end)
 
