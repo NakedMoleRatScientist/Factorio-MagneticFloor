@@ -37,6 +37,10 @@ script.on_event(defines.events.on_tick, function(event)
   --end
 end)
 
+script.on_event(defines.events.on_player_placed_equipment, function(event)
+  print("stuff")
+end)
+
 script.on_event(defines.events.on_entity_died, function(event)
   if event.entity.name == "player" then
     global.dead = true
