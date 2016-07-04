@@ -11,6 +11,11 @@ function UI.initialize(i)
   gui.top.hoverboard.add{type="label",name="charge"}
 end
 
+function UI.destroy(i)
+  local gui = game.players[i].gui
+  gui.top.hoverboard.destroy()
+end
+
 function UI.updateStatus()
   game.player.gui.top.hoverboard.charge.caption = "Charge: "..global.charge
 end
