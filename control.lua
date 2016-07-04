@@ -45,7 +45,7 @@ end)
 
 script.on_event(defines.events.on_player_removed_equipment, function(event)
   if event.equipment == "hoverboard" then
-    print("hoverboard removed.")
+    UI.destroy(event.player_index)
   end
 end)
 
