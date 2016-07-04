@@ -38,7 +38,9 @@ script.on_event(defines.events.on_tick, function(event)
 end)
 
 script.on_event(defines.events.on_player_placed_equipment, function(event)
-  print("stuff")
+  if event.equipment.name == "hoverboard" then
+    print("hoverboard placed.")
+  end
 end)
 
 script.on_event(defines.events.on_entity_died, function(event)
