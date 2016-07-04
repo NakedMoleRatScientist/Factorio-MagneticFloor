@@ -38,8 +38,11 @@ script.on_event(defines.events.on_tick, function(event)
 end)
 
 script.on_event(defines.events.on_player_placed_equipment, function(event)
-  if event.equipment.name == "hoverboard" then
-    UI.initialize(event.player_index)
+  local armor = game.players[event.player_index].get_inventory(defines.inventory.player_armor)[1]
+  if armor.valid_for_read and armor.has_grid then
+    if event.equipment.name == "hoverboard" then
+      UI.initialize(event.player_index)
+    end
   end
 end)
 
