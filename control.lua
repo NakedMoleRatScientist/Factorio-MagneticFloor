@@ -10,7 +10,6 @@ function setup()
   global.hoverboard = global.hoverboard or {}
   for _, player in pairs(game.players) do
     createPlayerMag(player.index)
-    UI.initialize(player.index)
   end
 end
 
