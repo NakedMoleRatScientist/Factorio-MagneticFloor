@@ -27,6 +27,14 @@ function getTile()
   return game.player.surface.get_tile(game.player.position.x,game.player.position.y)
 end
 
+function armorCheck()
+  local armor = game.players[event.player_index].get_inventory(defines.inventory.player_armor)[1]
+  if armor.valid_for_read and armor.has_grid then
+    return true
+  end
+  return false
+end
+
 script.on_event(defines.events.on_tick, function(event)
   --if global.dead == false then
   --  if global.tick == 0 then
@@ -36,6 +44,7 @@ script.on_event(defines.events.on_tick, function(event)
     -- hoverMode()
   --end
 end)
+
 
 script.on_event(defines.events.on_player_placed_equipment, function(event)
   local armor = game.players[event.player_index].get_inventory(defines.inventory.player_armor)[1]
