@@ -56,7 +56,7 @@ script.on_event(defines.events.on_player_placed_equipment, function(event)
 end)
 
 script.on_event(defines.events.on_player_removed_equipment, function(event)
-  if event.equipment == "hoverboard" then
+  if armorCheck(event.player_index) and event.equipment == "hoverboard" then
     UI.destroy(event.player_index)
   end
 end)
