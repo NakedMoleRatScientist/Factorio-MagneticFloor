@@ -46,7 +46,11 @@ script.on_event(defines.events.on_tick, function(event)
 end)
 
 script.on_event(defines.events.on_player_armor_inventory_changed, function(event)
-  print("check")
+  if armorCheck(event.player_index) then
+    print("armor added")
+  else
+    print("armor removed")
+  end
 end)
 
 script.on_event(defines.events.on_player_placed_equipment, function(event)
