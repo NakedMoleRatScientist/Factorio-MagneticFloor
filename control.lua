@@ -45,12 +45,13 @@ script.on_event(defines.events.on_tick, function(event)
   --end
 end)
 
+script.on_event(defines.events.on_player_armor_inventory_changed, function(event)
+  print("check")
+end)
 
 script.on_event(defines.events.on_player_placed_equipment, function(event)
-  if armorCheck(event.player_index) then
-    if event.equipment.name == "hoverboard" then
+  if armorCheck(event.player_index) and event.equipment.name == "hoverboard" then
       UI.initialize(event.player_index)
-    end
   end
 end)
 
