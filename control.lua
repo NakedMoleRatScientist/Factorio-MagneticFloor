@@ -27,8 +27,8 @@ function getTile()
   return game.player.surface.get_tile(game.player.position.x,game.player.position.y)
 end
 
-function armorCheck()
-  local armor = game.players[event.player_index].get_inventory(defines.inventory.player_armor)[1]
+function armorCheck(index)
+  local armor = game.players[index].get_inventory(defines.inventory.player_armor)[1]
   if armor.valid_for_read and armor.has_grid then
     return true
   end
@@ -47,8 +47,7 @@ end)
 
 
 script.on_event(defines.events.on_player_placed_equipment, function(event)
-  local armor = game.players[event.player_index].get_inventory(defines.inventory.player_armor)[1]
-  if armor.valid_for_read and armor.has_grid then
+  if armorCheck(event.player_index) then
     if event.equipment.name == "hoverboard" then
       UI.initialize(event.player_index)
     end
