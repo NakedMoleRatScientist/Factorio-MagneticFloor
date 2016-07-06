@@ -33,7 +33,7 @@ function getArmor(index)
 end
 
 function armorCheck(index)
-  local armor = game.players[index].get_inventory(defines.inventory.player_armor)[1]
+  local armor = getArmor(index)
   if armor.valid_for_read and armor.has_grid then
     return true
   end
