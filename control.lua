@@ -62,7 +62,7 @@ script.on_event(defines.events.on_player_armor_inventory_changed, function(event
     end
 
   else
-    print("armor removed")
+    UI.destroy(index)
   end
 end)
 
