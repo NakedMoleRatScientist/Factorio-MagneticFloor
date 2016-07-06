@@ -51,12 +51,13 @@ script.on_event(defines.events.on_tick, function(event)
 end)
 
 script.on_event(defines.events.on_player_armor_inventory_changed, function(event)
-  if armorCheck(event.player_index) then
-    local armor = getArmor(event.player_index)
+  local index = event.player_index
+  if armorCheck(index) then
+    local armor = getArmor(index)
     local equipment = armor.grid.equipment
     for i, e in ipairs(equipment) do
       if e.name == "hoverboard" then
-        print("hoverboard detected")
+        UI.initialize(index)
       end
     end
 
