@@ -27,6 +27,11 @@ function getTile()
   return game.player.surface.get_tile(game.player.position.x,game.player.position.y)
 end
 
+function getArmor(index)
+  local armor = game.players[index].get_inventory(defines.inventory.player_armor)[1]
+  return armor
+end
+
 function armorCheck(index)
   local armor = game.players[index].get_inventory(defines.inventory.player_armor)[1]
   if armor.valid_for_read and armor.has_grid then
@@ -47,7 +52,7 @@ end)
 
 script.on_event(defines.events.on_player_armor_inventory_changed, function(event)
   if armorCheck(event.player_index) then
-    print("armor added")
+    local armor = getArmor(event.player_index)
   else
     print("armor removed")
   end
