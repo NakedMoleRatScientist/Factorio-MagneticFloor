@@ -13,6 +13,10 @@ function setup()
   end
 end
 
+function activateEquipment(index)
+  global.hoverboard[index].active = true
+end
+
 function createPlayerMag(i)
   local entity = {
     charge = 0,
