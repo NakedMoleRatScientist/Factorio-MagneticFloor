@@ -13,7 +13,11 @@ end
 
 function UI.destroy(index)
   local gui = game.players[index].gui
-  gui.top.hoverboard.destroy()
+  if gui.top.hoverboard ~= nil then
+    gui.top.hoverboard.destroy()
+  else
+    print("WARNING: DESTROY UI element when non-existent!")
+  end
 end
 
 function UI.updateStatus()
