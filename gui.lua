@@ -1,8 +1,8 @@
 UI = {}
 
 
-function UI.initialize(i)
-  local gui = game.players[i].gui
+function UI.initialize(index)
+  local gui = game.players[index].gui
   if gui.top.hoverboard ~= nil then
     gui.top.hoverboard.destroy()
   end
@@ -11,8 +11,8 @@ function UI.initialize(i)
   gui.top.hoverboard.add{type="label",name="charge"}
 end
 
-function UI.destroy(i)
-  local gui = game.players[i].gui
+function UI.destroy(index)
+  local gui = game.players[index].gui
   gui.top.hoverboard.destroy()
 end
 
