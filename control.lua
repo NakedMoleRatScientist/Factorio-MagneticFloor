@@ -18,6 +18,12 @@ function activateEquipment(index)
   UI.initialize(index)
 end
 
+function deactivateEquipment(index)
+  if global.hoverboard[index].active == true then
+    UI.destroy(index)
+  end
+end
+
 function createPlayerMag(i)
   local entity = {
     charge = 0,
