@@ -61,7 +61,7 @@ script.on_event(defines.events.on_player_armor_inventory_changed, function(event
     local equipment = armor.grid.equipment
     for i, e in ipairs(equipment) do
       if e.name == "hoverboard" then
-        activateEquipment()
+        activateEquipment(index)
       end
     end
 
@@ -71,8 +71,9 @@ script.on_event(defines.events.on_player_armor_inventory_changed, function(event
 end)
 
 script.on_event(defines.events.on_player_placed_equipment, function(event)
-  if armorCheck(event.player_index) and event.equipment.name == "hoverboard" then
-      UI.initialize(event.player_index)
+  local index = event.player_index
+  if armorCheck(index) and event.equipment.name == "hoverboard" then
+      activateEquipment(index)
   end
 end)
 
