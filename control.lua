@@ -71,9 +71,8 @@ script.on_event(defines.events.on_player_armor_inventory_changed, function(event
         activateEquipment(index)
       end
     end
-
   else
-    UI.destroy(index)
+    deactivateEquipment(index)
   end
 end)
 
@@ -86,7 +85,7 @@ end)
 
 script.on_event(defines.events.on_player_removed_equipment, function(event)
   if armorCheck(event.player_index) and event.equipment == "hoverboard" then
-    UI.destroy(event.player_index)
+    deactivateEquipment(index)
   end
 end)
 
