@@ -15,6 +15,7 @@ end
 
 function activateEquipment(index)
   global.hoverboard[index].active = true
+  UI.initialize(index)
 end
 
 function createPlayerMag(i)
