@@ -20,6 +20,7 @@ end
 
 function deactivateEquipment(index)
   if global.hoverboard[index].active == true then
+    global.hoverboard[index].active = false
     UI.destroy(index)
   end
 end
