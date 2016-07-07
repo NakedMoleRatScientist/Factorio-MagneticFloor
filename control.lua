@@ -28,7 +28,8 @@ end
 function createPlayerMag(i)
   local entity = {
     charge = 0,
-    active = false
+    active = false,
+    inserted = false
   }
   global.hoverboard[i] = entity
 end
