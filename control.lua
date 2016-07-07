@@ -99,8 +99,11 @@ script.on_event(defines.events.on_entity_died, function(event)
 end)
 
 script.on_event(defines.events.on_gui_click,function(event)
+  local index = event.player_index
   if event.element.name == "mode" then
-    print("switch mode")
+    if global.hoverboard[index].status == false then
+      print("change")
+    end
   end
 end)
 
