@@ -100,13 +100,7 @@ end)
 
 script.on_event(defines.events.on_gui_click,function(event)
   if event.element.name == "mode" then
-    if global.hoverboard.status == false then
-      global.hoverboard.status = true
-      UI.switchMode()
-    elseif global.hoverboard.status == true then
-      global.hoverboard.status = false
-      UI.switchMode()
-    end
+    print("switch mode")
   end
 end)
 
