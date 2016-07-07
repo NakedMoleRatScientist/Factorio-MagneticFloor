@@ -14,13 +14,13 @@ function setup()
 end
 
 function activateEquipment(index)
-  global.hoverboard[index].active = true
+  global.hoverboard[index].inserted = true
   UI.initialize(index)
 end
 
 function deactivateEquipment(index)
-  if global.hoverboard[index].active == true then
-    global.hoverboard[index].active = false
+  if global.hoverboard[index].inserted == true then
+    global.hoverboard[index].inserted = false
     UI.destroy(index)
   end
 end
