@@ -16,7 +16,7 @@ function UI.destroy(index)
   if gui.top.hoverboard ~= nil then
     gui.top.hoverboard.destroy()
   else
-    print("WARNING: DESTROY UI element when non-existent!")
+    print("WARNING: DESTROYING non-existent MagneticFloor UI")
   end
 end
 
