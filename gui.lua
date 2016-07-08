@@ -1,5 +1,7 @@
 UI = {}
 
+UI.captionOFF = "Hoverboard OFF"
+UI.captionON = "Hoverboard ON"
 
 function UI.initialize(index)
   local gui = game.players[index].gui
@@ -7,7 +9,7 @@ function UI.initialize(index)
     gui.top.hoverboard.destroy()
   end
   gui.top.add{type="frame", name="hoverboard"}
-  gui.top.hoverboard.add{type="button",name="mode", caption = "Hoverboard Status: Inactive"}
+  gui.top.hoverboard.add{type="button",name="mode", caption = UI.captionOFF}
   gui.top.hoverboard.add{type="label",name="charge"}
 end
 
@@ -27,8 +29,8 @@ end
 function UI.switchMode(active,index)
   local gui = game.players[index].gui
   if active == true then
-    gui.top.hoverboard.mode.caption = "Hoverboard ON"
+    gui.top.hoverboard.mode.caption = UI.captionON
   elseif active == false then
-    gui.top.hoverboard.mode.caption = "Hoverboard OFF"
+    gui.top.hoverboard.mode.caption = UI.captionOFF
   end
 end
