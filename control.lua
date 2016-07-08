@@ -102,7 +102,9 @@ script.on_event(defines.events.on_gui_click,function(event)
   local index = event.player_index
   if event.element.name == "mode" then
     if global.hoverboard[index].status == false then
-      print("change")
+      global.hoverboard[index].status = true
+    elseif global.hoverboard[index].status == true then
+      global.hoverboard[index].status = false
     end
   end
 end)
