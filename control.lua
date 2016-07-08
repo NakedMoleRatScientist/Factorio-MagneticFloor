@@ -103,9 +103,9 @@ script.on_event(defines.events.on_gui_click,function(event)
   local active = global.hoverboard[index].active
   if event.element.name == "mode" then
     if active == false then
-      active = true
-    elseif status == true then
-      active = false
+      global.hoverboard[index].active = true
+    elseif active == true then
+      global.hoverboard[index].active = false
     end
     UI.switchMode(active,index)
   end
