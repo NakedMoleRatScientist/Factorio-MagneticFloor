@@ -15,6 +15,7 @@ end
 
 function activateEquipment(index)
   global.hoverboard[index].inserted = true
+  global.hoverboard[index].active = false
   UI.initialize(index)
 end
 
