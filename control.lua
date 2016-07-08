@@ -107,7 +107,7 @@ script.on_event(defines.events.on_gui_click,function(event)
     elseif status == true then
       active = false
     end
-    UI.switchMode(active)
+    UI.switchMode(active,index)
   end
 end)
 
