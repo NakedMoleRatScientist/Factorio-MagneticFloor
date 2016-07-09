@@ -55,11 +55,13 @@ function armorCheck(index)
 end
 
 script.on_event(defines.events.on_tick, function(event)
-  for i in ipairs(game.players) do
-    if global.hoverboard[i].inserted == true then
-      print("hoverboard inserted")
+  local n = 0
+  for k,v in pairs(game.players) do
+    if global.hoverboard[k].inserted == true and global.hoverboard[k].active == true then
+      print("active")
     end
   end
+
 end)
 
 script.on_event(defines.events.on_player_armor_inventory_changed, function(event)
