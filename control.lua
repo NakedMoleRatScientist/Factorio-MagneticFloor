@@ -30,7 +30,7 @@ function createPlayerMag(i)
   local entity = {
     charge = 0,
     active = false,
-    inserted = false
+    inserted = false,
   }
   global.hoverboard[i] = entity
 end
@@ -55,13 +55,11 @@ function armorCheck(index)
 end
 
 script.on_event(defines.events.on_tick, function(event)
-  --if global.dead == false then
-  --  if global.tick == 0 then
-  --    UI.initialize()
-  --    global.tick = global.tick + 1
-  --  end
-    -- hoverMode()
-  --end
+  for i in ipairs(game.players) do
+    if global.hoverboard[i].inserted == true then
+      print("hoverboard inserted")
+    end
+  end
 end)
 
 script.on_event(defines.events.on_player_armor_inventory_changed, function(event)
