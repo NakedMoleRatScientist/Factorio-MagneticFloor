@@ -60,7 +60,7 @@ script.on_event(defines.events.on_tick, function(event)
     if global.hoverboard[k].inserted == true and global.hoverboard[k].active == true then
       locomotion(k)
       tileCheck(k)
-      UI.updateStatus()
+      UI.updateStatus(k)
     end
   end
 
