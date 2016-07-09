@@ -127,14 +127,6 @@ function locomotion(index)
   end
 end
 
-function hoverMode()
-  if global.hoverboard.status == true then
-    activeHoverMode()
-    tileCheck()
-    Ui.updateStatus()
-  end
-end
-
 function inboundTile(name)
   local tiles = {"copper-floor", "copper-floor2", "copper-floor3","accelerator","down","left","up","right"}
   for _, tile in ipairs(tiles) do
