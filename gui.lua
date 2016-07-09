@@ -22,8 +22,8 @@ function UI.destroy(index)
   end
 end
 
-function UI.updateStatus()
-  game.player.gui.top.hoverboard.charge.caption = "Charge: "..global.charge
+function UI.updateStatus(index)
+  game.players[index].gui.top.hoverboard.charge.caption = "Charge: "..global.hoverboard[index].charge
 end
 
 function UI.switchMode(active,index)
