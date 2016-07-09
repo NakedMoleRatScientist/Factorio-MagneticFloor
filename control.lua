@@ -119,11 +119,11 @@ script.on_event(defines.events.on_built_entity,function(event)
 end)
 
 
-function activeHoverMode()
-  local orientation = game.player.walking_state.direction
-  if global.charge > 0 then
-    global.charge = global.charge - 1
-    game.player.walking_state = {walking = true, direction = orientation}
+function locomotion(index)
+  local orientation = game.players[index].walking_state.direction
+  if global.hoverboard[index].charge > 0 then
+    global.hoverboard[index].charge = global.hoverboard[index].charge - 1
+    game.players[index].walking_state = {walking = true, direction = orientation}
   end
 end
 
