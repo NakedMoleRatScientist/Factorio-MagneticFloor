@@ -144,8 +144,8 @@ function tileCheck(index)
   local tile = getTile(index)
   local walk = game.players[index].walking_state.walking
   if tile.name == "accelerator" then
-    if global.charge <= 40 then
-      global.charge = global.charge + 10
+    if global.hoverboard[index].charge <= 40 then
+      global.hoverboard[index].charge = global.hoverboard[index].charge + 10
     end
   elseif tile.name == "down" then
     game.player.walking_state = {walking = walk, direction = defines.direction.south}
