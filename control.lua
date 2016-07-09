@@ -37,8 +37,8 @@ end
 
 script.on_init(setup)
 
-function getTile()
-  return game.player.surface.get_tile(game.player.position.x,game.player.position.y)
+function getTile(index)
+  return game.players[index].surface.get_tile(game.players[index].position.x,game.players[index].position.y)
 end
 
 function getArmor(index)
@@ -58,7 +58,9 @@ script.on_event(defines.events.on_tick, function(event)
   local n = 0
   for k,v in pairs(game.players) do
     if global.hoverboard[k].inserted == true and global.hoverboard[k].active == true then
-      print("active")
+      locomotion(k)
+      tileCheck(k)
+      UI.updateStatus()
     end
   end
 
@@ -138,9 +140,9 @@ function inboundTile(name)
 end
 
 
-function tileCheck()
-  local tile = getTile()
-  local walk = game.player.walking_state.walking
+function tileCheck(index)
+  local tile = getTile(index)
+  local walk = game.players[index].walking_state.walking
   if tile.name == "accelerator" then
     if global.charge <= 40 then
       global.charge = global.charge + 10
