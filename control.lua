@@ -1,6 +1,5 @@
 require 'util'
 require 'gui'
-require 'test'
 
 function print(stuff)
   game.players[1].print(stuff)
