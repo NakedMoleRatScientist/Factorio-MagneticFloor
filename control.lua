@@ -151,13 +151,13 @@ function tileCheck(index)
       global.hoverboard[index].charge = global.hoverboard[index].charge + 10
     end
   elseif tile.name == "down" then
-    game.player.walking_state = {walking = walk, direction = defines.direction.south}
+    game.players[index].walking_state = {walking = walk, direction = defines.direction.south}
   elseif tile.name == "up" then
-    game.player.walking_state = {walking = walk, direction = defines.direction.north}
+    game.players[index].walking_state = {walking = walk, direction = defines.direction.north}
   elseif tile.name == "right" then
-    game.player.walking_state = {walking = walk, direction = defines.direction.east}
+    game.players[index].walking_state = {walking = walk, direction = defines.direction.east}
   elseif tile.name == "left" then
-    game.player.walking_state = {walking = walk, direction = defines.direction.west}
+    game.players[index].walking_state = {walking = walk, direction = defines.direction.west}
   elseif inboundTile(tile.name) == false then
     global.hoverboard[index].charge = 0
   end
