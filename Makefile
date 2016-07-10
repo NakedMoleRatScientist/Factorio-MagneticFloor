@@ -1,8 +1,8 @@
-PROJECT := "MagneticFloor_0.1.0"
+PROJECT := "MagneticFloor_0.1.1"
 
 build:
 	mkdir $(PROJECT)
-	cp -R info.json CHANGES LICENSE README.md data.lua control.lua locale prototypes graphics migrations $(PROJECT)
+	cp -R info.json CHANGES LICENSE README.md data.lua gui.lua control.lua locale prototypes graphics migrations $(PROJECT)
 	zip -r $(PROJECT).zip $(PROJECT) -x *.xcf* *.zip* *.DS_Store* *.kra*
 
 clean:

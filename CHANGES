@@ -30,3 +30,6 @@ Version# 0.1.0(2016-07-10)
 * Separate GUI code into its own file.
 * Rewrite to account for 0.13 API changes.
 * UI change to hoverboard status. Enabled only if the hoverboard is equipped and the user is wearing power armor.
+---
+Version# 0.1.1(2016-07-10)
+* Fix missing file.
