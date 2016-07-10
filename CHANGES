@@ -25,7 +25,7 @@ Version# 0.0.6(2016-06-18)
 Version# 0.0.7(2016-06-22)
 * Accelerator.png should be accelerator.png
 ---
-Version# 0.1.0()
+Version# 0.1.0(2016-07-10)
 * Accelerator graphic changed to a power symbol button.
 * Separate GUI code into its own file.
 * Rewrite to account for 0.13 API changes.
