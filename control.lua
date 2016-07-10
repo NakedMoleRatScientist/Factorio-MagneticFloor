@@ -159,6 +159,6 @@ function tileCheck(index)
   elseif tile.name == "left" then
     game.player.walking_state = {walking = walk, direction = defines.direction.west}
   elseif inboundTile(tile.name) == false then
-    global.charge = 0
+    global.hoverboard[index].charge = 0
   end
 end
