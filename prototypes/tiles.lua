@@ -178,6 +178,7 @@ data:extend(
   {
     type = "tile",
     name = "accelerator",
+    walking_speed_modifier = 1.9,
     variants =
     {
       main = {
@@ -204,6 +205,7 @@ data:extend(
   {
     type = "tile",
     name = "right",
+    walking_speed_modifier = 1.9,
     variants =
     {
       main = {
@@ -230,6 +232,7 @@ data:extend(
   {
     type = "tile",
     name = "left",
+    walking_speed_modifier = 1.9,
     variants =
     {
       main = {
@@ -282,6 +285,7 @@ data:extend(
   {
     type = "tile",
     name = "up",
+    walking_speed_modifier = 1.9,
     variants =
     {
       main = {
