@@ -6,6 +6,10 @@ function print(stuff)
   game.players[1].print(stuff)
 end
 
+function printBool(stuff)
+  game.players[1].print(tostring(stuff))
+end
+
 function setup()
   global.hoverboard = global.hoverboard or {}
   for _, player in pairs(game.players) do
