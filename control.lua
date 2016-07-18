@@ -11,9 +11,6 @@ end
 
 function setup()
   global.hoverboard = global.hoverboard or {}
-  for _, player in pairs(game.players) do
-    createPlayerMag(player.index)
-  end
 end
 
 function activateEquipment(index)
@@ -56,6 +53,10 @@ function armorCheck(index)
   end
   return false
 end
+
+script.on_event(defines.events.on_player_joined_game, function(event)
+  createPlayerMag(event.player_index)
+end)
 
 script.on_event(defines.events.on_tick, function(event)
   local n = 0
@@ -126,7 +127,9 @@ end)
 function locomotion(index)
   local orientation = game.players[index].walking_state.direction
   if global.hoverboard[index].charge > 0 then
-    global.hoverboard[index].charge = global.hoverboard[index].charge - 1
+    if game.tick % 60 == 0 then
+      global.hoverboard[index].charge = global.hoverboard[index].charge - 1
+    end
     game.players[index].walking_state = {walking = true, direction = orientation}
   end
 end
