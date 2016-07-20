@@ -10,7 +10,7 @@ clean:
 	rm -r $(PROJECT).zip
 
 copy:
-	cp $(PROJECT).zip ~/Library/Application\ Support/factorio/mods/
+	cp $(PROJECT).zip ~/Library/Application\ Support/factorio/game_mods/
 
 cycle:
 	make build
