@@ -1,38 +1,42 @@
-Version# 0.0.1 (2016-02-01):
+Version 0.0.1 (2016-02-01):
 * Initial release
 ---
-Version# 0.0.2 (2016-02-03): Add hoverboard equipment
+Version 0.0.2 (2016-02-03): Add hoverboard equipment
 * add hoverboard equipment
 --
-Version# 0.0.3(2016-02-04)
+Version 0.0.3(2016-02-04)
 * nerf movement bonus of hoverboard from 100% to 10%(1 to 0.1)
 * prevent players from using more than one hoverboard
 * update hoverboard equipment size from 1 by 1 to 3 by 2
 * Add technology requirement for both copper floor and hoverboard
 * Add item group tab MagneticFloor and sort recipe by subgroup
 ---
-Version# 0.0.4(2016-02-06)
+Version 0.0.4(2016-02-06)
 * Add new copper floor level 2 and 3
 * Add corresponding icons from copper-floor all the way to level 3
 * Add technology upgrade for new copper flooring
 ---
-Version# 0.0.5(2016-06-16)
+Version 0.0.5(2016-06-16)
 * Add automatic navigation via directives and accelerators.
 ---
-Version# 0.0.6(2016-06-18)
+Version 0.0.6(2016-06-18)
 * Eliminate a crash that is caused by player dying.
 ---
-Version# 0.0.7(2016-06-22)
+Version 0.0.7(2016-06-22)
 * Accelerator.png should be accelerator.png
 ---
-Version# 0.1.0(2016-07-10)
+Version 0.1.0(2016-07-10)
 * Accelerator graphic changed to a power symbol button.
 * Separate GUI code into its own file.
 * Rewrite to account for 0.13 API changes.
 * UI change to hoverboard status. Enabled only if the hoverboard is equipped and the user is wearing power armor.
 ---
-Version# 0.1.1(2016-07-10)
+Version 0.1.1(2016-07-10)
 * Fix missing file.
-Version# 0.1.2(2016-07-18)
+---
+Version 0.1.2(2016-07-18)
 * Hoverboard charges are decreased every second instead of every tick.
 * Fix a crash when starting a new game.
+---
+Version 0.1.3(2016-07-20)
+* Fix a crash when loading a new game.
