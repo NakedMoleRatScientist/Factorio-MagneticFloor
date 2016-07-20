@@ -33,3 +33,6 @@ Version# 0.1.0(2016-07-10)
 ---
 Version# 0.1.1(2016-07-10)
 * Fix missing file.
+Version# 0.1.2(2016-07-18)
+* Hoverboard charges are decreased every second instead of every tick.
+* Fix a crash when starting a new game.
