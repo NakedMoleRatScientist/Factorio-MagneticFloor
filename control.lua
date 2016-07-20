@@ -1,5 +1,8 @@
 require 'util'
 require 'gui'
+require "stdlib/log/logger"
+
+LOG = Logger.new("MagneticFloor")
 
 function print(stuff)
   game.players[1].print(stuff)
@@ -61,6 +64,9 @@ end)
 script.on_event(defines.events.on_tick, function(event)
   local n = 0
   for k,v in pairs(game.players) do
+    if global.hoverboard[k] == nil then
+      createPlayerMag(v.index)
+    end
     if global.hoverboard[k].inserted == true and global.hoverboard[k].active == true then
       locomotion(k)
       tileCheck(k)
