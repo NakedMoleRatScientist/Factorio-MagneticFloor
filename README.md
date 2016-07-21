@@ -1,9 +1,12 @@
 
+
 ## Zipping around
 
 The most basic feature of this mod is the floor tiles known as copper-floor, which gives better bonus than concrete for speed movement bonus. Each successive tier of copper floors give better bonus movement.
 
-You can also move around the base automatically if you have accelerators to charge your hoverboard, directives to direct your movement, and conductive floors to serve as pathways throughout your base.
+However, to truly take advantage of copper floors, you'll need to build out the infrastructure to allowed automated movements.
+
+To do this, you must equip yourself with a hoverboard, build out the pathways, directives to control movement, and accelerators to charge your hoverboard.
 
 **To turn on active navigation** - If the hoverboard status is inactive, click on the button to turn it active. This will allow active navigation.
 
