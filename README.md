@@ -1,7 +1,7 @@
 
 ## Zipping around
 
-The most basic feature of this mod is the conductive floors(known as copper floors) that allowed faster movement. For best speed movement bonus, equip yourself with a hoverboard.
+The most basic feature of this mod is the floor tiles known as copper-floor, which gives better bonus than concrete for speed movement bonus. Each successive tier of copper floors give better bonus movement.
 
 You can also move around the base automatically if you have accelerators to charge your hoverboard, directives to direct your movement, and conductive floors to serve as pathways throughout your base.
 
