@@ -2,7 +2,7 @@
 
 ## Zipping around
 
-The most basic feature of this mod is the floor tiles known as copper-floor, which gives better bonus than concrete for speed movement bonus. Each successive tier of copper floors give better bonus movement.
+The most basic feature of this mod is the floor tiles known as copper-floor, which gives better bonus than concrete for speed movement bonus. Each successive tier(Level 1: ![copper-floor1](graphics/copper-floor/concrete1.png) , Level 2: [copper-floor2](graphics/copper-floor/concrete1_level2.png) , Level 3: [copper-floor3](graphics/copper-floor/concrete1_level3.png)  ) of copper floors give better bonus movement.
 
 However, to truly take advantage of copper floors, you'll need to build out the infrastructure to allowed automated movements.
 
