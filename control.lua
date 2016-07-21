@@ -1,5 +1,6 @@
 require 'util'
 require 'gui'
+require "test"
 require "stdlib/log/logger"
 
 LOG = Logger.new("MagneticFloor")
