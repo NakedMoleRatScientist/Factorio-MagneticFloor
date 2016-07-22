@@ -57,7 +57,7 @@ data:extend({
     place_as_tile =
     {
       result = "accelerator",
-      condition_size = 4,
+      condition_size = 1,
       condition = { "water-tile" }
     },
     stack_size = 50,
@@ -71,7 +71,7 @@ data:extend({
     place_as_tile =
     {
       result = "right",
-      condition_size = 4,
+      condition_size = 1,
       condition = { "water-tile" }
     },
     stack_size = 50,
@@ -85,7 +85,7 @@ data:extend({
     place_as_tile =
     {
       result = "down",
-      condition_size = 4,
+      condition_size = 1,
       condition = { "water-tile" }
     },
     stack_size = 50,
@@ -99,7 +99,7 @@ data:extend({
     place_as_tile =
     {
       result = "left",
-      condition_size = 4,
+      condition_size = 1,
       condition = { "water-tile" }
     },
     stack_size = 50,
@@ -113,7 +113,7 @@ data:extend({
     place_as_tile =
     {
       result = "up",
-      condition_size = 4,
+      condition_size = 1,
       condition = { "water-tile" }
     },
     stack_size = 50,
