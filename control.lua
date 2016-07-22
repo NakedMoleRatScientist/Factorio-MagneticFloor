@@ -124,9 +124,10 @@ script.on_event(defines.events.on_gui_click,function(event)
   end
 end)
 
-script.on_event(defines.events.on_built_entity,function(event)
+script.on_event(defines.events.on_player_built_tile,function(event)
+  print(event.created_entity.name)
   if event.created_entity.name == "accelerator" then
-    game.player.print("beep")
+    print("boop")
   end
 end)
 
