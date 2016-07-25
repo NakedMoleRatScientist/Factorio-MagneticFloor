@@ -119,4 +119,16 @@ data:extend({
     stack_size = 50,
     order = "b[concrete]"
   },
+  {
+    type = 'item',
+    name = 'accelerator_charger',
+    icon = "__MagneticFLoor__/graphics/directives/up.png",
+    flags = {"goes-to-quickbar"},
+    place_as_entity =
+    {
+      result = "accelerator_charger"
+    },
+    stack_size = 50,
+    order = "b[concrete]"
+  }
 })
