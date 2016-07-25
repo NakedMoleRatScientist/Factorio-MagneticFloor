@@ -1,6 +1,5 @@
 
 **accelerator**:
-* Make them use and require energy when charging a hoverboard.
 * Add temporary movement bonus for player.
 
 **movement**:
@@ -8,7 +7,6 @@
 * If problem found, write out a proposed solution to fix skipping over directives.
 
 **tutorial**:
-* Explain how to build the copper floor infrastructure and how to use them.
 * Use GIF.
 * Make a youtube video on how to do it.
 
@@ -23,3 +21,8 @@
 * Think out a system for ensuring that entities don't collide with each other?
 * Traffic lights?
 * Governor directive - slow or speed up as needed.
+
+**0.1.4 release**
+* Make accelerator use and require energy when charging a hoverboard.
+* Tutorial: Explain how to build the copper floor infrastructure and how to use them.
+* transit to ruby rake rather than sticking to make.
