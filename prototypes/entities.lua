@@ -2,11 +2,12 @@ data:extend({
   {
     type = "accumulator",
     name = "accelerator_charger",
-    icon = "__base__/graphics/entity/basic-accumulator/basic-accumulator.png",
+    icon = "__base__/graphics/entity/accumulator/accumulator.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.1, mining_time = 0.1, result="accelerator_charger"},
     indestructible = true,
     max_health = 150,
+    order = "a-a-a",
     corpse = "medium-remnants",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1, -1}, {1, 1}},
@@ -20,7 +21,7 @@ data:extend({
     },
     picture =
     {
-      filename = "__base__/graphics/entity/basic-accumulator/basic-accumulator.png",
+      filename = "__base__/graphics/entity/accumulator/accumulator.png",
       priority = "extra-high",
       width = 124,
       height = 103,
@@ -28,7 +29,7 @@ data:extend({
     },
     charge_animation =
     {
-      filename = "__base__/graphics/entity/basic-accumulator/basic-accumulator-charge-animation.png",
+      filename = "__base__/graphics/entity/accumulator/accumulator-charge-animation.png",
       width = 138,
       height = 135,
       line_length = 8,
@@ -40,7 +41,7 @@ data:extend({
     charge_light = {intensity = 0.3, size = 7},
     discharge_animation =
     {
-      filename = "__base__/graphics/entity/basic-accumulator/basic-accumulator-discharge-animation.png",
+      filename = "__base__/graphics/entity/accumulator/accumulator-discharge-animation.png",
       width = 147,
       height = 128,
       line_length = 8,
