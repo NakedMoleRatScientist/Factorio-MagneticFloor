@@ -122,7 +122,7 @@ data:extend({
   {
     type = 'item',
     name = 'accelerator_charger',
-    icon = "__MagneticFLoor__/graphics/directives/up.png",
+    icon = "__MagneticFloor__/graphics/directives/up.png",
     flags = {"goes-to-quickbar"},
     place_as_entity =
     {
