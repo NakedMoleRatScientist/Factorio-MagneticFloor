@@ -22,11 +22,11 @@ data:extend({
     },
     picture =
     {
-      filename = "__base__/graphics/entity/accumulator/accumulator.png",
+      filename = "__MagneticFloor__/graphics/transparent.png",
       priority = "extra-high",
-      width = 124,
-      height = 103,
-      shift = {0.7, -0.2}
+      width = 32,
+      height = 32,
+      shift = {0.0, 0.0}
     },
     charge_animation =
     {
