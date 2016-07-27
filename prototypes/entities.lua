@@ -9,6 +9,7 @@ data:extend({
     max_health = 150,
     order = "a-a-a",
     corpse = "medium-remnants",
+    collision_mask = {"water-tile"},
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1, -1}, {1, 1}},
     energy_source =
