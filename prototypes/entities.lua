@@ -30,11 +30,11 @@ data:extend({
     },
     charge_animation =
     {
-      filename = "__base__/graphics/entity/accumulator/accumulator-charge-animation.png",
-      width = 138,
-      height = 135,
-      line_length = 8,
-      frame_count = 24,
+      filename = "__MagneticFloor__/graphics/transparent.png",
+      width = 32,
+      height = 32,
+      line_length = 0,
+      frame_count = 1,
       shift = {0.482, -0.638},
       animation_speed = 0.5
     },
@@ -42,12 +42,12 @@ data:extend({
     charge_light = {intensity = 0.3, size = 7},
     discharge_animation =
     {
-      filename = "__base__/graphics/entity/accumulator/accumulator-discharge-animation.png",
-      width = 147,
-      height = 128,
-      line_length = 8,
-      frame_count = 24,
-      shift = {0.395, -0.525},
+      filename = "__MagneticFloor__/graphics/transparent.png",
+      width = 32,
+      height = 32,
+      line_length = 0,
+      frame_count = 1,
+      shift = {0, 0},
       animation_speed = 0.5
     },
     discharge_cooldown = 60,
