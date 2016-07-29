@@ -28,28 +28,8 @@ data:extend({
       height = 32,
       shift = {0.0, 0.0}
     },
-    charge_animation =
-    {
-      filename = "__MagneticFloor__/graphics/transparent.png",
-      width = 32,
-      height = 32,
-      line_length = 0,
-      frame_count = 1,
-      shift = {0.482, -0.638},
-      animation_speed = 0.5
-    },
     charge_cooldown = 30,
     charge_light = {intensity = 0.3, size = 7},
-    discharge_animation =
-    {
-      filename = "__MagneticFloor__/graphics/transparent.png",
-      width = 32,
-      height = 32,
-      line_length = 0,
-      frame_count = 1,
-      shift = {0, 0},
-      animation_speed = 0.5
-    },
     discharge_cooldown = 60,
     discharge_light = {intensity = 0.7, size = 7},
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
