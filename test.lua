@@ -13,5 +13,13 @@ remote.add_interface("mag",
     local p = game.players[1]
     p.insert{name = "power-armor-mk2", count = 1}
     p.insert{name = "fusion-reactor-equipment", count = 1}
+  end,
+  getPower = function()
+    local p = game.players[1]
+    p.insert{name = "steam-engine", count = 10}
+    p.insert{name = "boiler", count = 14}
+    p.insert{name = "coal", count = 200}
+    p.insert{name = "burner-inserter", count = 14}
+    p.insert{name = "substation", count = 3}
   end
 })
