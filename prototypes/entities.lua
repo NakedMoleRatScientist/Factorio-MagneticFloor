@@ -11,7 +11,7 @@ data:extend({
     corpse = "medium-remnants",
     collision_mask = {"water-tile"},
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
-    selection_box = {{-1, -1}, {1, 1}},
+    selection_box = {{0.0, 0.0}, {1, 1}},
     energy_source =
     {
       type = "electric",
