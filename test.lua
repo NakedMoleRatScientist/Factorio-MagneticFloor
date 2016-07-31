@@ -21,5 +21,7 @@ remote.add_interface("mag",
     p.insert{name = "coal", count = 200}
     p.insert{name = "burner-inserter", count = 14}
     p.insert{name = "substation", count = 3}
+    p.insert{name = "offshore-pump", count = 1}
+    p.insert{name = "transport-belt", count = 100}
   end
 })
