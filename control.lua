@@ -128,7 +128,7 @@ script.on_event(defines.events.on_player_built_tile,function(event)
   for k,v in pairs(event.positions) do
     local tile = game.players[event.player_index].surface.get_tile(v.x,v.y)
     if tile.name == "accelerator" then
-      entity = game.players[event.player_index].surface.create_entity{
+      local entity = game.players[event.player_index].surface.create_entity{
         name = "accelerator_charger",
         position = tile.position,
         force = game.players[event.player_index].force
