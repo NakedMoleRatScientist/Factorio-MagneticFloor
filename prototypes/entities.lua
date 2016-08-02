@@ -3,7 +3,7 @@ data:extend({
     type = "accumulator",
     name = "accelerator_charger",
     icon = "__base__/graphics/entity/accumulator/accumulator.png",
-    flags = {"placeable-neutral", "player-creation"},
+    flags = {"player-creation"},
     minable = {hardness = 0.1, mining_time = 0.1, result="accelerator_charger"},
     indestructible = true,
     max_health = 150,
