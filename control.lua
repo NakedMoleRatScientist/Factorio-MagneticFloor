@@ -124,7 +124,7 @@ script.on_event(defines.events.on_gui_click,function(event)
   end
 end)
 
-function build_entity_on_tile(event)
+function entity_on_built_tile_action(event)
   for k,v in pairs(event.positions) do
     local tile = game.players[event.player_index].surface.get_tile(v.x,v.y)
     if tile.name == "accelerator" then
@@ -140,8 +140,8 @@ end
 function entity_on_removed_tile_action(event)
 end
 
-script.on_event(defines.events.on_player_built_tile,build_entity_on_tile)
-script.on_event(defines.events.on_robot_built_tile,build_entity_on_tile)
+script.on_event(defines.events.on_player_built_tile,entity_on_built_tile_action)
+script.on_event(defines.events.on_robot_built_tile,entity_on_built_tile_action)
 
 function locomotion(index)
   local orientation = game.players[index].walking_state.direction
