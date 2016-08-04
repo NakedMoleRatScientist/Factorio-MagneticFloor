@@ -137,7 +137,7 @@ function build_entity_on_tile(event)
   end
 end
 
-function destroy_accelerator(event)
+function entity_on_removed_tile_action(event)
 end
 
 script.on_event(defines.events.on_player_built_tile,build_entity_on_tile)
