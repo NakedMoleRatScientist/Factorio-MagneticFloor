@@ -133,7 +133,6 @@ script.on_event(defines.events.on_player_built_tile,function(event)
         position = tile.position,
         force = game.players[event.player_index].force
       }
-      entity.minable = false
     end
   end
 end)
