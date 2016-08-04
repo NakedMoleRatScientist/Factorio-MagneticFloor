@@ -140,7 +140,7 @@ function build_accelerator(event)
 end
 
 script.on_event(defines.events.on_player_built_tile,build_accelerator)
-
+script.on_event(defines.events.on_robot_built_tile,build_accelerator)
 
 function locomotion(index)
   local orientation = game.players[index].walking_state.direction
