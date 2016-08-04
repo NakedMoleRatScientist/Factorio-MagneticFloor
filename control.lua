@@ -125,8 +125,6 @@ script.on_event(defines.events.on_gui_click,function(event)
 end)
 
 function build_accelerator(event)
-  LOG.log("beep")
-  LOG.write()
   for k,v in pairs(event.positions) do
     local tile = game.players[event.player_index].surface.get_tile(v.x,v.y)
     if tile.name == "accelerator" then
