@@ -124,7 +124,9 @@ script.on_event(defines.events.on_gui_click,function(event)
   end
 end)
 
-script.on_event(defines.events.on_player_built_tile,function(event)
+function build_accelerator(event)
+  LOG.log("beep")
+  LOG.write()
   for k,v in pairs(event.positions) do
     local tile = game.players[event.player_index].surface.get_tile(v.x,v.y)
     if tile.name == "accelerator" then
@@ -135,7 +137,9 @@ script.on_event(defines.events.on_player_built_tile,function(event)
       }
     end
   end
-end)
+end
+
+script.on_event(defines.events.on_player_built_tile,build_accelerator)
 
 
 function locomotion(index)
@@ -157,7 +161,6 @@ function inboundTile(name)
   end
   return false
 end
-
 
 function tileCheck(index)
   local tile = getTile(index)
