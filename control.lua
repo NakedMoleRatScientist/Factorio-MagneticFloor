@@ -154,6 +154,8 @@ end
 
 script.on_event(defines.events.on_player_built_tile,entity_on_built_tile_action)
 script.on_event(defines.events.on_robot_built_tile,entity_on_built_tile_action)
+script.on_event(defines.events.on_player_mined_tile, entity_on_removed_tile_action)
+script.on_event(defines.events.on_robot_mined_tile, entity_on_removed_tile_action)
 
 function locomotion(index)
   local orientation = game.players[index].walking_state.direction
