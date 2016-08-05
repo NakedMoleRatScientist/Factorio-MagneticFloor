@@ -133,6 +133,11 @@ function entity_on_built_tile_action(event)
         position = tile.position,
         force = game.players[event.player_index].force
       }
+    else
+      local entity = game.players[event.player_index].surface.find_entity("accelerator_charger",tile.position)
+      if entity ~= nil then
+        entity.destroy()
+      end
     end
   end
 end
