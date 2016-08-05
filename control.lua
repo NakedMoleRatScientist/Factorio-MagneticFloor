@@ -157,6 +157,12 @@ script.on_event(defines.events.on_robot_built_tile,entity_on_built_tile_action)
 script.on_event(defines.events.on_player_mined_tile, entity_on_removed_tile_action)
 script.on_event(defines.events.on_robot_mined_tile, entity_on_removed_tile_action)
 
+function charge_hoverboard(index)
+  if global.hoverboard[index].charge <= 40 then
+    global.hoverboard[index].charge = global.hoverboard[index].charge + 10
+  end
+end
+
 function locomotion(index)
   local orientation = game.players[index].walking_state.direction
   if global.hoverboard[index].charge > 0 then
@@ -181,9 +187,7 @@ function tileCheck(index)
   local tile = getTile(index)
   local walk = game.players[index].walking_state.walking
   if tile.name == "accelerator" then
-    if global.hoverboard[index].charge <= 40 then
-      global.hoverboard[index].charge = global.hoverboard[index].charge + 10
-    end
+    charge_hoverboard(index)
   elseif tile.name == "down" and global.hoverboard[index].charge > 0 then
     game.players[index].walking_state = {walking = walk, direction = defines.direction.south}
   elseif tile.name == "up" and global.hoverboard[index].charge > 0 then
