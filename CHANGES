@@ -44,3 +44,4 @@ Version 0.1.3(2016-07-20)
 ---
 Version 0.1.4
 * Adjust the ease of mining and laying down copper floor and directives to eliminate annoyance.
+* Significantly reduce charge from over forty seconds to only five.
