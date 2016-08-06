@@ -157,9 +157,16 @@ script.on_event(defines.events.on_robot_built_tile,entity_on_built_tile_action)
 script.on_event(defines.events.on_player_mined_tile, entity_on_removed_tile_action)
 script.on_event(defines.events.on_robot_mined_tile, entity_on_removed_tile_action)
 
-function charge_hoverboard(index)
+function charge_hoverboard(index,tile)
   if global.hoverboard[index].charge < 5 then
     global.hoverboard[index].charge = 5
+    local entity = game.players[index].surface.find_entity("accelerator_charger", tile.position)
+    if entity ~= nil then
+      print("charger detected.")
+      if entity.energy == 0 then
+        print("energy...not available!")
+      end
+    end
   end
 end
 
@@ -187,7 +194,7 @@ function tileCheck(index)
   local tile = getTile(index)
   local walk = game.players[index].walking_state.walking
   if tile.name == "accelerator" then
-    charge_hoverboard(index)
+    charge_hoverboard(index,tile)
   elseif tile.name == "down" and global.hoverboard[index].charge > 0 then
     game.players[index].walking_state = {walking = walk, direction = defines.direction.south}
   elseif tile.name == "up" and global.hoverboard[index].charge > 0 then
