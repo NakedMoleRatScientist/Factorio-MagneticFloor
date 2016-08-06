@@ -160,9 +160,11 @@ script.on_event(defines.events.on_robot_mined_tile, entity_on_removed_tile_actio
 function charge_hoverboard(index,tile)
   local entity = game.players[index].surface.find_entity("accelerator_charger", tile.position)
   if entity ~= nil then
-    print("charger detected.")
-    if entity.energy == 0 then
-      print("energy...not available!")
+    print("energy level: "..tostring(entity.energy))
+    local charge_needed = 5 - global.hoverboard[index].charge
+    local energy_needed = (charge_needed) * "1000"
+    if (entity.energy - energy_needed) > 0 then
+      print("charged!")
     end
   end
 end
