@@ -158,8 +158,8 @@ script.on_event(defines.events.on_player_mined_tile, entity_on_removed_tile_acti
 script.on_event(defines.events.on_robot_mined_tile, entity_on_removed_tile_action)
 
 function charge_hoverboard(index)
-  if global.hoverboard[index].charge <= 40 then
-    global.hoverboard[index].charge = global.hoverboard[index].charge + 10
+  if global.hoverboard[index].charge < 5 then
+    global.hoverboard[index].charge = 5
   end
 end
 
