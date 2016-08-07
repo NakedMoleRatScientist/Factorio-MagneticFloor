@@ -6,7 +6,7 @@ The most basic feature of this mod is the floor tiles known as copper-floor, whi
 
 Beyond that, to truly take advantage of this mod, you'll need to build out the infrastructure to allow automated movement.
 
-To do this, you must equip yourself with a hoverboard, build out the pathways, directives to control movement, and accelerators to charge your hoverboard.
+To do this, you must equip yourself with a hoverboard, build out the pathways, place directives to control movement, and accelerators to charge your hoverboard.
 
 Below is a tutorial on how to do exactly that.
 
