@@ -165,6 +165,8 @@ function charge_hoverboard(index,tile)
     if (entity.energy - energy_needed) > 0 then
       entity.energy = entity.energy - energy_needed
       global.hoverboard[index].charge = global.hoverboard[index].charge + charge_needed
+    else
+      print("Insufficient energy for charging.")
     end
   end
 end
