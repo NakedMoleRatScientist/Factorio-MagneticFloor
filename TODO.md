@@ -23,6 +23,6 @@
 * Governor directive - slow or speed up as needed.
 
 **0.1.4 release**
-* Make accelerator use and require energy when charging a hoverboard.
+* ~Make accelerator use and require energy when charging a hoverboard.~
 * Tutorial: Explain how to build the copper floor infrastructure and how to use them.
 * transit to ruby rake rather than sticking to make.
