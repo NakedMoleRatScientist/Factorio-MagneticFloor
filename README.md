@@ -1,6 +1,8 @@
 
 
-## Zipping around
+## Introduction
+
+MagneticFloor is a mod that adds a totally new gameplay, allowing for automation of player movements (and vehicles in the future), based on the conceit of using magnetic levitation to float.
 
 The most basic feature of this mod is the floor tiles known as copper-floor, which gives better bonus than concrete for speed movement bonus. Each successive tier(Level 1: ![Copper Floor](graphics/icons/copper-floor-icon.png) , Level 2: ![Copper Floor Level2](graphics/icons/copper-floor-icon_level2.png) , Level 3: ![Copper Floor Level3](graphics/icons/copper-floor-icon_level3.png)  ) of copper floors give better bonus movement.
 
