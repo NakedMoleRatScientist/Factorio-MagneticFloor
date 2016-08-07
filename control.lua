@@ -165,7 +165,7 @@ function charge_hoverboard(index,tile)
     local energy_needed = (charge_needed) * "1000"
     if (entity.energy - energy_needed) > 0 then
       entity.energy = entity.energy - energy_needed
-      global.hoverboard[index].charge = charge_needed
+      global.hoverboard[index].charge = global.hoverboard[index].charge + charge_needed
     end
   end
 end
