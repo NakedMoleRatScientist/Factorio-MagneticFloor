@@ -8,7 +8,7 @@ The foundation of Magnetic Floor are the floor tiles known as copper-floor, whic
 
 To actually move player automatically required a multiple of requisites.
 
-First, ensure that a hoverboard![hoverboard](graphics/icons/hoverboard-icon.png) is equipped with your power armor and that you are wearing it. Otherwise, the hoverboard will not activate.
+First, ensure that a hoverboard ![hoverboard](graphics/icons/hoverboard-icon.png) is equipped with your power armor and that you are wearing it. If you are doing it correctly, the hoverboard UI ![hoverboard_ui](graphics/examples/hoverboard-ui.png), should appears somewhere on the upper left corner. If not, then you did not correctly equip the hoverboard. 
 
 If the hoverboard status indicated inactive, click on the button to turn on active navigation. Otherwise, it is off, disallowing any possibility of automated movement.
 
