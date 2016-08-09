@@ -8,7 +8,7 @@ The foundation of Magnetic Floor are the floor tiles known as copper-floor, whic
 
 To actually move player automatically required a multiple of requisites, some of which required technology research. All tiers copper floor required green and red science, but unlocking the directives and the accelerator required blue science.
 
-First, ensure that the equipment hoverboard ![hoverboard](graphics/icons/hoverboard-icon.png) is equipped in your power armor and that you are wearing it. If you are doing it correctly, the hoverboard UI ![hoverboard_ui](graphics/examples/hoverboard-ui.png), should appears somewhere around the upper left corner. If not, then you did not correctly equip the hoverboard.
+First, ensure that the equipment hoverboard ()![hoverboard](graphics/icons/hoverboard-icon.png)) is equipped in your power armor and that you are wearing it. If you are doing it correctly, the hoverboard UI (![hoverboard_ui](graphics/examples/hoverboard-ui.png)), should appears somewhere around the upper left corner. If not, then you did not correctly equip the hoverboard.
 
 If the button is indicated 'OFF', then you'll need to click on the button to turn on activate navigation. Otherwise, you will not be able to do any automated movements.
 
