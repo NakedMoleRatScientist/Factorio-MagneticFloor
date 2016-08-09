@@ -10,8 +10,7 @@ To actually move player automatically required a multiple of requisites, some of
 
 First, ensure that the equipment hoverboard ![hoverboard](graphics/icons/hoverboard-icon.png) is equipped in your power armor and that you are wearing it. If you are doing it correctly, the hoverboard UI ![hoverboard_ui](graphics/examples/hoverboard-ui.png), should appears somewhere around the upper left corner. If not, then you did not correctly equip the hoverboard.
 
-
-If the hoverboard status indicated inactive, click on the button to turn on active navigation. Otherwise, it is off, disallowing any possibility of automated movement.
+If the button is indicated 'OFF', then you'll need to click on the button to turn on activate navigation. Otherwise, you will not be able to do any automated movements.
 
 To start with, your hoverboard has a charge of zero, meaning that it will not move you. If you do have a charge, it will tick down to zero every tick, or that you are no longer on any conductive flooring.
 
