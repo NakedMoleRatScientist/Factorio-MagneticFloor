@@ -12,12 +12,9 @@ First, ensure that the equipment hoverboard ![hoverboard](graphics/icons/hoverbo
 
 If the button is indicated 'OFF', then you'll need to click on the button to turn on activate navigation. Otherwise, you will not be able to do any automated movements.
 
-To start with, your hoverboard has a charge of zero, meaning that it will not move you. If you do have a charge, it will tick down to zero every tick, or that you are no longer on any conductive flooring.
+Next, you'll need to lay a path of copper flooring from your intended starting location to your intended destination.
 
-You must place an accelerator to charge your hoverboard. This will give you an additional twenty charges.
-
-Use directive tiles to direct the movement of your hoverboard.
-
+The last component for automated movement is the directives and the accelerator tile. You'll need to supply electricity to your accelerator in order for the tile to work. The purpose of an accelerator is to charge your hoverboard, providing the energy it needs for automated movement for five seconds, or five ticks. Directives will supply your hoverboard with changes in the direction. Up, down, left, right arrows are what it is said on the tin.
 
 ## Copyright Notice
 
