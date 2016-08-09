@@ -16,11 +16,11 @@ Next, you'll need to lay a path of copper flooring from your intended starting l
 
 Example: Copper Floor pathways
 
-The last component for automated movement are the directives(![left](graphics/directives/left.png), ![right](graphics/directives/right.png), ![down](graphics/directives/down.png), ![up](graphics/directives/up.png)) and the accelerator tile(![accelerator](graphics/directives/accelerator.png)). You'll need to supply electricity to your accelerator in order for the tile to work. The purpose of an accelerator is to charge your hoverboard, providing the energy it needs for automated movement for five seconds, or five ticks. Directive tiles will supply your hoverboard with changes in the direction of your character's movement. Up, down, left, right arrows are what it is said on the tin.
+The last component for automated movement is the the accelerator tile(![accelerator](graphics/directives/accelerator.png)) with directives(![left](graphics/directives/left.png), ![right](graphics/directives/right.png), ![down](graphics/directives/down.png), ![up](graphics/directives/up.png)) to redirect movement. You'll need to supply electricity to your accelerator in order for the tile to work. The purpose of an accelerator is to charge your hoverboard, providing the energy it needs for automated movement for five seconds, or five ticks. Directive tiles will supply your hoverboard with changes in the direction of your character's movement. Up, down, left, right arrows are what it is said on the tin.
 
 Example: Necessary components for movement.
 
-It is also worth keeping in mind that automated movement won't work on grass tiles and such. The hoverboard's charges will set to zero once it hit non-copper flooring tiles, with the exception of directive and accelerator tiles. 
+It is also worth keeping in mind that automated movement won't work on grass tiles and such. The hoverboard's charges will set to zero once it hit non-copper flooring tiles, with the exception of directive and accelerator tiles.
 
 ##Further examples
 
