@@ -14,8 +14,10 @@ If the button is indicated 'OFF', then you'll need to click on the button to tur
 
 Next, you'll need to lay a path of copper flooring from your intended starting location to your intended destination.
 
-Example: Copper Floor pathways
-
+**Example: Copper Floor pathways**
+<hr>
+![pathway](graphics/examples/copper_pathway.png)
+<hr>
 The last component for automated movement is the the accelerator tile(![accelerator](graphics/directives/accelerator.png)) with directives(![left](graphics/directives/left.png), ![right](graphics/directives/right.png), ![down](graphics/directives/down.png), ![up](graphics/directives/up.png)) to redirect movement. You'll need to supply electricity to your accelerator in order for the tile to work. The purpose of an accelerator is to charge your hoverboard, providing the energy it needs for automated movement for five seconds, or five ticks. Directive tiles will supply your hoverboard with changes in the direction of your character's movement. Up, down, left, right arrows are what it is said on the tin.
 
 Example: Necessary components for movement.
