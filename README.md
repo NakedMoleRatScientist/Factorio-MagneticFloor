@@ -31,7 +31,10 @@ It is also worth keeping in mind that automated movement won't work on grass til
 
 A complete loop is shown below. As long as the accelerator is charged, the player character should keep moving indefinitely in an automatic fashion.
 
-Example: A Loop
+**Example: A Loop**
+<hr>
+![a_loop](graphics/examples/magnetic_floor_loop.gif)
+</hr>
 
 ## Copyright Notice
 
