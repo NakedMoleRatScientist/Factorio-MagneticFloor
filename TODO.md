@@ -26,4 +26,3 @@
 * ~Make accelerator use and require energy when charging a hoverboard.~
 * ~Tutorial: Explain how to build the copper floor infrastructure and how to use them.~
 * Transit to ruby rake rather than sticking to make.
-* Add migration pathway for players on 0.1.3.
