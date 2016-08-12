@@ -14,3 +14,7 @@ task :build do |t|
   sh "cp -r " + [json,plain,lua,directories].join(" ") + PROJECT
   sh "zip -r " + PROJECT + ".zip " + PROJECT + " -x *.xcf* *.zip* *.DS_Store* *.kra*"
 end
+
+task :copy do |t|
+  sh "cp " + PROJECT + ".zip ~/Library/Application\ Support/factorio/test_mods/"
+end
