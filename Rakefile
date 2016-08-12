@@ -17,5 +17,5 @@ task :build do |t|
 end
 
 task :copy do |t|
-  sh "cp " + PROJECT + ".zip ~/Library/Application\ Support/factorio/test_mods/"
+  sh "cp " + PROJECT + ".zip ~/Library/Application\\ Support/factorio/test_mods/"
 end
