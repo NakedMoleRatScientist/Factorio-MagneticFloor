@@ -10,8 +10,9 @@ task :build do |t|
   plain = "CHANGES LICENSE README.md TODO.md"
   lua = "data.lua gui.lua control.lua test.lua"
   directories = "locale prototypes graphics migrations stdlib"
+  list = [json,plain,lua,directories,PROJECT].join(" ")
 	sh "mkdir " + PROJECT
-  sh "cp -r " + [json,plain,lua,directories].join(" ") + PROJECT
+  sh "cp -r " + list
   sh "zip -r " + PROJECT + ".zip " + PROJECT + " -x *.xcf* *.zip* *.DS_Store* *.kra*"
 end
 
