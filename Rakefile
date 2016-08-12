@@ -11,6 +11,6 @@ task :build do |t|
   lua = "data.lua gui.lua control.lua test.lua"
   directories = "locale prototypes graphics migrations stdlib"
 	sh "mkdir " + PROJECT
-  sh "cp -r " + json + " " + plain + " " + lua + " " + directories + " " + PROJECT
+  sh "cp -r " + [json,plain,lua,directories].join(" ") + PROJECT
   sh "zip -r " + PROJECT + ".zip " + PROJECT + " -x *.xcf* *.zip* *.DS_Store* *.kra*"
 end
