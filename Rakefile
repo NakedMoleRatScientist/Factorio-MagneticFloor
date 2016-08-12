@@ -19,3 +19,5 @@ end
 task :copy do |t|
   sh "cp " + PROJECT + ".zip ~/Library/Application\\ Support/factorio/test_mods/"
 end
+
+task :cycle => [:build,:copy,:clean]
