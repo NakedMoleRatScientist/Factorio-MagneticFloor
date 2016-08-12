@@ -6,7 +6,11 @@ task :clean do |t|
 end
 
 task :build do |t|
+  json = "info.json"
+  plain = "CHANGES LICENSE README.md TODO.md"
+  lua = "data.lua gui.lua control.lua test.lua"
+  directories = "locale prototypes graphics migrations stdlib"
 	sh "mkdir " + PROJECT
-  sh "cp -r " + "info.json CHANGES LICENSE README.md stdlib data.lua gui.lua control.lua locale prototypes graphics migrations " + PROJECT
+  sh "cp -r " + json + " " + plain + " " + lua + " " + directories + " " + PROJECT
   sh "zip -r " + PROJECT + ".zip " + PROJECT + " -x *.xcf* *.zip* *.DS_Store* *.kra*"
 end
