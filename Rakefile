@@ -1,4 +1,5 @@
 require "json"
+info = JSON.parse("info.json")
 
 PROJECT = "MagneticFloor_0.1.4"
 
@@ -23,3 +24,6 @@ task :copy do |t|
 end
 
 task :cycle => [:build,:copy,:clean]
+
+task :move do |t|
+end
