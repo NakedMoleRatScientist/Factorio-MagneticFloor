@@ -27,5 +27,6 @@ task :cycle => [:build,:copy,:clean]
 task :move do |t|
   file = File.read("info.json")
   info = JSON.parse(file)
+  puts Dir.pwd
   puts info["version"]
 end
