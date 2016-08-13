@@ -31,6 +31,7 @@ task :move do |t|
   if folder.split("_")[-1] == info["version"]
     puts "No need to move. Current folder up-to-date."
   else
+    puts "Moving directory..."
     sh "mv " + Dir.pwd + " ~/Library/Application\\ Support/factorio/dev_mods/MagneticFloor_" + info["version"]
     exec 'bash'
   end
