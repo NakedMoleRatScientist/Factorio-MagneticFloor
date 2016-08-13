@@ -1,3 +1,5 @@
+require "json"
+
 PROJECT = "MagneticFloor_0.1.4"
 
 task :clean do |t|
