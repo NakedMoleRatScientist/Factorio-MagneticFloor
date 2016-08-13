@@ -32,7 +32,8 @@ task :move do |t|
     puts "No need to move. Current folder up-to-date."
   else
     puts "Moving directory..."
-    sh "mv " + Dir.pwd + " ~/Library/Application\\ Support/factorio/dev_mods/MagneticFloor_" + info["version"]
+    new_dir = " ~/Library/Application\\ Support/factorio/dev_mods/MagneticFloor_" + info["version"]
+    sh "mv " + Dir.pwd + new_dir
     exec 'bash'
   end
 end
