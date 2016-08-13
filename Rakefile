@@ -1,5 +1,4 @@
 require "json"
-info = JSON.parse("info.json")
 
 PROJECT = "MagneticFloor_0.1.4"
 
@@ -26,4 +25,7 @@ end
 task :cycle => [:build,:copy,:clean]
 
 task :move do |t|
+  file = File.read("info.json")
+  info = JSON.parse(file)
+  puts info["version"]
 end
