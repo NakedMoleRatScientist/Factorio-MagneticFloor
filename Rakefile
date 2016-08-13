@@ -34,6 +34,7 @@ task :move do |t|
     puts "Moving directory..."
     new_dir = " ~/Library/Application\\ Support/factorio/dev_mods/MagneticFloor_" + info["version"]
     sh "mv " + Dir.pwd + new_dir
+    sh "cd " + new_dir
     exec 'bash'
   end
 end
