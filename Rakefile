@@ -27,6 +27,9 @@ task :cycle => [:build,:copy,:clean]
 task :move do |t|
   file = File.read("info.json")
   info = JSON.parse(file)
-  puts Dir.pwd
+  folder = Dir.pwd.split("/")[-1]
+  if folder.split("_")[-1] == info["version"]
+    puts "No need to move. Current folder up-to-date."
+  end
   puts info["version"]
 end
