@@ -23,20 +23,3 @@ task :copy do |t|
 end
 
 task :cycle => [:build,:copy,:clean]
-
-task :move do |t|
-  file = File.read("info.json")
-  info = JSON.parse(file)
-  folder = Dir.pwd.split("/")[-1]
-  if folder.split("_")[-1] == info["version"]
-    puts "No need to move. Current folder up-to-date."
-  else
-    puts "Moving directory..."
-    new_dir = " ~/Library/Application\\ Support/factorio/dev_mods/MagneticFloor_" + info["version"]
-    oldpwd = Dir.pwd.split(" ")
-    newpwd = oldpwd[0] + "\\ " + oldpwd[1]
-    sh "mv " + newpwd + new_dir
-    sh "cd " + new_dir
-    exec 'bash'
-  end
-end
