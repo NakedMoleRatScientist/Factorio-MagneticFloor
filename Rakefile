@@ -1,6 +1,8 @@
 require "json"
 
-PROJECT = "MagneticFloor_0.1.4"
+file = File.read("info.json")
+info = JSON.load(file)
+PROJECT = info["name"] + "_" + info["version"]
 
 task :clean do |t|
   sh "rm -r " + PROJECT
