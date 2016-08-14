@@ -21,12 +21,7 @@ task :build do |t|
 end
 
 task :copy do |t|
-  sh "cp " + PROJECT + ".zip ~/Library/Application\\ Support/factorio/test_mods/"
-end
-
-task :dev do |t|
   sh "cp " + PROJECT + ".zip ~/Library/Application\\ Support/factorio/dev_mods/"
 end
 
 task :cycle => [:build,:copy,:clean]
-task :test => [:build,:dev,:clean]
