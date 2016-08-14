@@ -25,4 +25,4 @@
 **0.1.4 release**
 * ~Make accelerator use and require energy when charging a hoverboard.~
 * ~Tutorial: Explain how to build the copper floor infrastructure and how to use them.~
-* Transit to ruby rake rather than sticking to make.
+* ~Transit to ruby rake rather than sticking to make.~
