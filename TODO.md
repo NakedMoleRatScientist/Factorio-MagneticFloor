@@ -7,7 +7,7 @@
 * If problem found, write out a proposed solution to fix skipping over directives.
 
 **tutorial**:
-* Use GIF.
+~* Use GIF.~
 * Make a youtube video on how to do it.
 
 **smart directives**
@@ -26,3 +26,8 @@
 * ~Make accelerator use and require energy when charging a hoverboard.~
 * ~Tutorial: Explain how to build the copper floor infrastructure and how to use them.~
 * ~Transit to ruby rake rather than sticking to make.~
+
+**0.1.5 release**
+* Nerf the copper floor cost and directive research. Rebalancing.
+* Replace directive tiles with directive entities, and replace with copper floor.
+* Upgrade stdlib
