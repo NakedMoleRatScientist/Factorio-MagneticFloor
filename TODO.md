@@ -30,4 +30,4 @@
 **0.1.5 release**
 * Nerf the copper floor cost and directive research. Rebalancing.
 * Replace directive tiles with directive entities, and replace with copper floor.
-* Upgrade stdlib
+* ~Upgrade stdlib~
