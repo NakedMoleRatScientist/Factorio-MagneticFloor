@@ -18,7 +18,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"copper-plate",10},
+      {"copper-plate",5},
       {"copper-floor",1}
     },
     subgroup = "magnetic-floor",
@@ -30,7 +30,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"copper-plate",20},
+      {"copper-plate",5},
       {"copper-floor2",2}
     },
     subgroup = "magnetic-floor",
