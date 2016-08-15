@@ -129,13 +129,12 @@ data:extend({
     },
     unit =
     {
-      count = 150,
+      count = 20,
       time = 60,
       ingredients =
       {
         {"science-pack-1",3},
         {"science-pack-2",3},
-        {"science-pack-3",3}
       }
     },
     order = "[ca]"
@@ -169,13 +168,12 @@ data:extend({
     },
     unit =
     {
-      count = 300,
+      count = 20,
       time = 70,
       ingredients =
       {
         {"science-pack-1",3},
         {"science-pack-2",3},
-        {"science-pack-3",3}
       }
     },
     order = "[cd]"
