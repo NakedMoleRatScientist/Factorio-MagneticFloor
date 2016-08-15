@@ -47,3 +47,7 @@ Version 0.1.4(2016-08-14)
 * Significantly reduce charge from over forty seconds to only five.
 * Add an accumulator to the accelerator charger, which means accelerator tiles required energy.
 * Transit from make and makefile to ruby's rake and rakefile build system.
+---
+Version 0.1.5
+* Rename prototype files.
+* Upgrade stdlib to 0.6.0
