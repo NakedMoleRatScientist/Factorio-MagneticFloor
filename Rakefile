@@ -25,3 +25,7 @@ task :copy do |t|
 end
 
 task :cycle => [:build,:copy,:clean]
+
+task :symlink do |t|
+  sh "ln -s ~/Library/Application\\ Support/factorio/dev_mods/ " + PROJECT + " ~/projects/MagneticFloor"
+end
