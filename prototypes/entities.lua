@@ -65,7 +65,6 @@ data:extend({
     subgroup = "trees",
     order = "a[tree]-b[dead-tree]",
     vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
-    autoplace = dead_trees_autoplace(0.5),
     pictures =
     {
       {
