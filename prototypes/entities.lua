@@ -54,6 +54,7 @@ data:extend({
     max_health = 20,
     collision_box = {{0, 0}, {1, 1}},
     selection_box = {{0, 0}, {1, 1}},
+    indestructible = true,
     subgroup = "trees",
     order = "a[tree]-b[dead-tree]",
     vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
