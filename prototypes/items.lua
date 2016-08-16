@@ -110,11 +110,9 @@ data:extend({
     name = 'up',
     icon = "__MagneticFloor__/graphics/directives/up.png",
     flags = {"goes-to-quickbar"},
-    place_as_tile =
+    place_as_entity =
     {
       result = "up",
-      condition_size = 1,
-      condition = { "water-tile" }
     },
     stack_size = 50,
     order = "b[concrete]"
