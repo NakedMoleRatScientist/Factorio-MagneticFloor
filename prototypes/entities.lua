@@ -50,7 +50,7 @@ data:extend({
     type = "tree",
     name = "up",
     icon = "__MagneticFloor__/graphics/directives/up.png",
-    flags = {"placeable-neutral", "placeable-off-grid", "breaths-air"},
+    flags = {},
     minable =
     {
       mining_particle = "wooden-particle",
