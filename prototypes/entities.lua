@@ -51,14 +51,6 @@ data:extend({
     name = "up",
     icon = "__MagneticFloor__/graphics/directives/up.png",
     flags = {},
-    minable =
-    {
-      mining_particle = "wooden-particle",
-      mining_time = 1,
-      result = "raw-wood",
-      count = 2
-    },
-    emissions_per_tick = -0.0001,
     max_health = 20,
     collision_box = {{-0.6, -0.6}, {0.6, 0.6}},
     selection_box = {{-0.8, -0.8}, {0.8, 0.8}},
