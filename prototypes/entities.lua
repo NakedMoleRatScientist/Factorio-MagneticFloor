@@ -54,7 +54,7 @@ data:extend({
     max_health = 20,
     collision_mask = {"water-tile"},
     collision_box = {{0, 0}, {1, 1}},
-    selection_box = {{0, 0}, {1, 1}},
+    selection_box = {{-.5, -.5}, {.5, .5}},
     indestructible = true,
     subgroup = "magnetic-floor",
     order = "d[directives]-u[up]",
