@@ -48,8 +48,8 @@ data:extend({
   },
   {
     type = "tree",
-    name = "dry-hairy-tree",
-    icon = "__base__/graphics/icons/dry-hairy-tree.png",
+    name = "up",
+    icon = "__MagneticFloor__/graphics/directives/up.png",
     flags = {"placeable-neutral", "placeable-off-grid", "breaths-air"},
     minable =
     {
