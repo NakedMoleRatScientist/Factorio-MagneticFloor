@@ -27,5 +27,7 @@ end
 task :cycle => [:build,:copy,:clean]
 
 task :symlink do |t|
-  sh "ln -s ~/Library/Application\\ Support/factorio/dev_mods/ " + PROJECT + " ~/projects/MagneticFloor"
+  destination = "~/Library/Application\\ Support/factorio/dev_mods/" + PROJECT
+  source = "~/projects/MagneticFloor"
+  sh ["ln -s",source, destination].join(" ")
 end
