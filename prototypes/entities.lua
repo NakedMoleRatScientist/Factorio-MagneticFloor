@@ -56,9 +56,8 @@ data:extend({
     collision_box = {{0, 0}, {1, 1}},
     selection_box = {{0, 0}, {1, 1}},
     indestructible = true,
-    subgroup = "MagneticFloor",
+    subgroup = "magnetic-floor",
     order = "d[directives]-u[up]",
-    vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
     pictures =
     {
       {
