@@ -53,7 +53,7 @@
     flags = {},
     max_health = 20,
     collision_mask = {"water-tile"},
-    collision_box = {{-.5, -.5}, {.5, .5}},
+    collision_box = {{-.4, -.4}, {.4, .4}},
     selection_box = {{-.5, -.5}, {.5, .5}},
     minable =
     {
