@@ -47,7 +47,7 @@
     },
   },
   {
-    type = "tree",
+    type = "simple-entity",
     name = "up",
     icon = "__MagneticFloor__/graphics/directives/up.png",
     flags = {},
@@ -58,6 +58,7 @@
     indestructible = true,
     subgroup = "magnetic-floor",
     order = "d[directives]-u[up]",
+    render_layer = "decorative",
     pictures =
     {
       {
