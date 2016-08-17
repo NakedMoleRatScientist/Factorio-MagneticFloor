@@ -9,7 +9,7 @@
     order = "a-a-a",
     corpse = "medium-remnants",
     collision_mask = {"water-tile"},
-    collision_box = {{0, 0}, {1, 1}},
+    collision_box = {{0,0}, {.9, .9}},
     selection_box = {{0.0, 0.0}, {1, 1}},
     energy_source =
     {
