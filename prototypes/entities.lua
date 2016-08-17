@@ -1,4 +1,4 @@
-data:extend({
+  data:extend({
   {
     type = "accumulator",
     name = "accelerator_charger",
@@ -9,7 +9,7 @@ data:extend({
     order = "a-a-a",
     corpse = "medium-remnants",
     collision_mask = {"water-tile"},
-    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
+    collision_box = {{0, 0}, {1, 1}},
     selection_box = {{0.0, 0.0}, {1, 1}},
     energy_source =
     {
