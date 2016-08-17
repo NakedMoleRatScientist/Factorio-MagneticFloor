@@ -28,6 +28,6 @@
 * ~Transit to ruby rake rather than sticking to make.~
 
 **0.1.5 release**
-* Nerf the copper floor cost and directive research. Rebalancing.
+* ~Nerf the copper floor cost and directive research. Rebalancing.~
 * Replace directive tiles with directive entities, and replace with copper floor.
 * ~Upgrade stdlib~
