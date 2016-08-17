@@ -55,6 +55,13 @@
     collision_mask = {"water-tile"},
     collision_box = {{0, 0}, {1, 1}},
     selection_box = {{-.5, -.5}, {.5, .5}},
+    minable =
+    {
+      mining_particle = "stone-particle",
+      mining_time = 0.1,
+      result = "up",
+      count = 1
+    },
     indestructible = true,
     subgroup = "magnetic-floor",
     order = "d[directives]-u[up]",
