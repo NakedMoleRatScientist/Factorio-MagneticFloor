@@ -12,14 +12,16 @@ function tileCheck(index)
   local walk = game.players[index].walking_state.walking
   local entity = getEntity(index)
   if entity ~= nil then
-    print("YES!")
+    if entity.name == "up" then
+      game.players[index].walking_state = {walking = walk, direction = defines.direction.north}
+    end
   end
   if tile.name == "accelerator" then
     charge_hoverboard(index,tile)
   elseif tile.name == "down" and global.hoverboard[index].charge > 0 then
     game.players[index].walking_state = {walking = walk, direction = defines.direction.south}
-  elseif tile.name == "up" and global.hoverboard[index].charge > 0 then
-    game.players[index].walking_state = {walking = walk, direction = defines.direction.north}
+
+
   elseif tile.name == "right" and global.hoverboard[index].charge > 0 then
     game.players[index].walking_state = {walking = walk, direction = defines.direction.east}
   elseif tile.name == "left" and global.hoverboard[index].charge > 0 then
