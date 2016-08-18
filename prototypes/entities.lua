@@ -1,4 +1,14 @@
-  data:extend({
+
+function addDirective(name)
+  local copy = util.table.deepcopy(data.raw["simple-entity"]["up"])
+  copy.name = name
+  local image = "__MagneticFloor__/graphics/directives/"..name..".png"
+  copy.icon = image
+  copy.pictures[1].filename = image
+  return copy
+end
+
+data:extend({
   {
     type = "accumulator",
     name = "accelerator_charger",
@@ -76,3 +86,5 @@
     }
   }
 })
+
+addDirective("down")
