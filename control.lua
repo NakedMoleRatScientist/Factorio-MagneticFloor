@@ -42,10 +42,6 @@ end
 
 script.on_init(setup)
 
-function getTile(index)
-  return game.players[index].surface.get_tile(game.players[index].position.x,game.players[index].position.y)
-end
-
 function getArmor(index)
   local armor = game.players[index].get_inventory(defines.inventory.player_armor)[1]
   return armor

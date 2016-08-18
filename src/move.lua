@@ -1,3 +1,7 @@
+function getTile(index)
+  return game.players[index].surface.get_tile(game.players[index].position.x,game.players[index].position.y)
+end
+
 function tileCheck(index)
   local tile = getTile(index)
   local walk = game.players[index].walking_state.walking
