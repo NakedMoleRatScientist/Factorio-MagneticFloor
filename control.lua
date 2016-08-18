@@ -1,5 +1,5 @@
 require 'util'
-require 'gui'
+require 'src/gui'
 require "test"
 require "stdlib/log/logger"
 
