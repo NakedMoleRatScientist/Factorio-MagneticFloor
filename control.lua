@@ -177,13 +177,3 @@ function locomotion(index)
     game.players[index].walking_state = {walking = true, direction = orientation}
   end
 end
-
-function inboundTile(name)
-  local tiles = {"copper-floor", "copper-floor2", "copper-floor3","accelerator","down","left","up","right"}
-  for _, tile in ipairs(tiles) do
-    if tile == name then
-      return true
-    end
-  end
-  return false
-end

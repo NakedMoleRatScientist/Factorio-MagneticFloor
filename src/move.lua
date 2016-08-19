@@ -7,6 +7,16 @@ function getEntity(index)
   return game.players[index].surface.find_entity("up",position)
 end
 
+function inboundTile(name)
+  local tiles = {"copper-floor", "copper-floor2", "copper-floor3","accelerator","down","left","up","right"}
+  for _, tile in ipairs(tiles) do
+    if tile == name then
+      return true
+    end
+  end
+  return false
+end
+
 function tileCheck(index)
   local tile = getTile(index)
   local walk = game.players[index].walking_state.walking
