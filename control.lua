@@ -121,39 +121,6 @@ script.on_event(defines.events.on_gui_click,function(event)
   end
 end)
 
-function entity_on_built_tile_action(event)
-  for k,v in pairs(event.positions) do
-    local tile = game.players[event.player_index].surface.get_tile(v.x,v.y)
-    if tile.name == "accelerator" then
-      local entity = game.players[event.player_index].surface.create_entity{
-        name = "accelerator_charger",
-        position = tile.position,
-        force = game.players[event.player_index].force
-      }
-    else
-      local entity = game.players[event.player_index].surface.find_entity("accelerator_charger",tile.position)
-      if entity ~= nil then
-        entity.destroy()
-      end
-    end
-  end
-end
-
-function entity_on_removed_tile_action(event)
-  for k,v in pairs(event.positions) do
-    local tile = game.players[event.player_index].surface.get_tile(v.x,v.y)
-    local entity = game.players[event.player_index].surface.find_entity("accelerator_charger", tile.position)
-    if entity ~= nil then
-      entity.destroy()
-    end
-  end
-end
-
-script.on_event(defines.events.on_player_built_tile,entity_on_built_tile_action)
-script.on_event(defines.events.on_robot_built_tile,entity_on_built_tile_action)
-script.on_event(defines.events.on_player_mined_tile, entity_on_removed_tile_action)
-script.on_event(defines.events.on_robot_mined_tile, entity_on_removed_tile_action)
-
 function charge_hoverboard(index,tile)
   local entity = game.players[index].surface.find_entity("accelerator_charger", tile.position)
   if entity ~= nil then
