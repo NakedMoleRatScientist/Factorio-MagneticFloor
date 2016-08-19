@@ -5,7 +5,13 @@ end
 function getDirectiveEntity(index)
   position = {game.players[index].position.x, game.players[index].position.y}
   local list = {"left","down","up","right"}
-  return game.players[index].surface.find_entity("up",position)
+  for _, name in ipairs(list) do
+    local target = game.players[index].surface.find_entity(name,position)
+    if target ~= nil then
+      return target
+    end
+  end
+  return nil
 end
 
 function inboundTile(name)
@@ -26,7 +32,7 @@ function tileCheck(index)
   end
   local walk = game.players[index].walking_state.walking
   local entity = getDirectiveEntity(index)
-  if entity ~= nil then
+  if entity ~= nil and global.hoverboard[index].charge > 0 then
     if entity.name == "up" then
       game.players[index].walking_state = {walking = walk, direction = defines.direction.north}
     elseif entity.name == "down" then
