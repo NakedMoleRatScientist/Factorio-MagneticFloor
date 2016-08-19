@@ -68,12 +68,7 @@ data:extend({
     name = 'right',
     icon = "__MagneticFloor__/graphics/directives/right.png",
     flags = {"goes-to-quickbar"},
-    place_as_tile =
-    {
-      result = "right",
-      condition_size = 1,
-      condition = { "water-tile" }
-    },
+    place_result = "right",
     stack_size = 50,
     order = "b[concrete]"
   },
@@ -91,12 +86,7 @@ data:extend({
     name = 'left',
     icon = "__MagneticFloor__/graphics/directives/left.png",
     flags = {"goes-to-quickbar"},
-    place_as_tile =
-    {
-      result = "left",
-      condition_size = 1,
-      condition = { "water-tile" }
-    },
+    place_result = "left",
     stack_size = 50,
     order = "b[concrete]"
   },
