@@ -4,6 +4,7 @@ end
 
 function getDirectiveEntity(index)
   position = {game.players[index].position.x, game.players[index].position.y}
+  local list = {"left","down","up","right"}
   return game.players[index].surface.find_entity("up",position)
 end
 
