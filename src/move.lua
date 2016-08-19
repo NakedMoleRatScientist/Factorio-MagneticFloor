@@ -8,7 +8,7 @@ function getEntity(index)
 end
 
 function inboundTile(name)
-  local tiles = {"copper-floor", "copper-floor2", "copper-floor3","accelerator","down","left","up","right"}
+  local tiles = {"copper-floor", "copper-floor2", "copper-floor3"}
   for _, tile in ipairs(tiles) do
     if tile == name then
       return true
