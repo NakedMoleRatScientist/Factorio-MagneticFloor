@@ -21,6 +21,13 @@ data:extend({
     collision_mask = {"water-tile"},
     collision_box = {{-.4, -.4}, {.4, .4}},
     selection_box = {{-.5,-.5}, {.5, .5}},
+    minable =
+    {
+      mining_particle = "stone-particle",
+      mining_time = 0.1,
+      result = "accelerator",
+      count = 1
+    },
     energy_source =
     {
       type = "electric",
