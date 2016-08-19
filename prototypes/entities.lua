@@ -87,4 +87,8 @@ data:extend({
   }
 })
 
-data:extend({addDirective("down")})
+data:extend({
+  addDirective("down"),
+  addDirective("right"),
+  addDirective("left")
+})
