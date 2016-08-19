@@ -30,11 +30,11 @@ function tileCheck(index)
       game.players[index].walking_state = {walking = walk, direction = defines.direction.west}
     elseif entity.name == "right" then
       game.players[index].walking_state = {walking = walk, direction = defines.direction.east}
+    elseif entity.name == "accelerator" then
+      charge_hoverboard(index,tile)
     end
   end
-  if tile.name == "accelerator" then
-    charge_hoverboard(index,tile)
-  elseif inboundTile(tile.name) == false then
+  if inboundTile(tile.name) == false then
     global.hoverboard[index].charge = 0
   end
 end
