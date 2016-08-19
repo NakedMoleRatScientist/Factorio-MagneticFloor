@@ -46,17 +46,23 @@ function tileCheck(index)
   end
   local walk = game.players[index].walking_state.walking
   local entity = getDirectiveEntity(index)
-  if entity ~= nil and global.hoverboard[index].charge > 0 then
-    if entity.name == "up" then
-      game.players[index].walking_state = {walking = walk, direction = defines.direction.north}
-    elseif entity.name == "down" then
-      game.players[index].walking_state = {walking = walk, direction = defines.direction.south}
-    elseif entity.name == "left" then
-      game.players[index].walking_state = {walking = walk, direction = defines.direction.west}
-    elseif entity.name == "right" then
-      game.players[index].walking_state = {walking = walk, direction = defines.direction.east}
-    elseif entity.name == "accelerator_charger" then
-      charge_hoverboard(index,tile)
-    end
+  if entity == nil then
+    return
+  end
+  if entity.name == "accelerator_charger" then
+    charge_hoverboard(index,tile)
+    return
+  end
+  if entity.name == "up" then
+    game.players[index].walking_state = {walking = walk, direction = defines.direction.north}
+  elseif entity.name == "down" then
+    game.players[index].walking_state = {walking = walk, direction = defines.direction.south}
+  elseif entity.name == "left" then
+    game.players[index].walking_state = {walking = walk, direction = defines.direction.west}
+  elseif entity.name == "right" then
+    game.players[index].walking_state = {walking = walk, direction = defines.direction.east}
+  elseif entity.name == "accelerator_charger" then
+    print("beep")
+    charge_hoverboard(index,tile)
   end
 end
