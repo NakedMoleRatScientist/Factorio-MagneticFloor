@@ -19,6 +19,10 @@ end
 
 function tileCheck(index)
   local tile = getTile(index)
+  if inboundTile(tile.name) == false then
+    global.hoverboard[index].charge = 0
+    return
+  end
   local walk = game.players[index].walking_state.walking
   local entity = getEntity(index)
   if entity ~= nil then
@@ -33,8 +37,5 @@ function tileCheck(index)
     elseif entity.name == "accelerator" then
       charge_hoverboard(index,tile)
     end
-  end
-  if inboundTile(tile.name) == false then
-    global.hoverboard[index].charge = 0
   end
 end
