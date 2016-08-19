@@ -4,7 +4,7 @@ end
 
 function getDirectiveEntity(index)
   position = {game.players[index].position.x, game.players[index].position.y}
-  local list = {"left","down","up","right"}
+  local list = {"left","down","up","right","accelerator_charger"}
   for _, name in ipairs(list) do
     local target = game.players[index].surface.find_entity(name,position)
     if target ~= nil then
