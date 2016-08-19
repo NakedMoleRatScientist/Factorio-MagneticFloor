@@ -24,6 +24,20 @@ function inboundTile(name)
   return false
 end
 
+function charge_hoverboard(index,tile)
+  local entity = game.players[index].surface.find_entity("accelerator_charger", tile.position)
+  if entity ~= nil then
+    local charge_needed = 5 - global.hoverboard[index].charge
+    local energy_needed = (charge_needed) * "1000"
+    if (entity.energy - energy_needed) > 0 then
+      entity.energy = entity.energy - energy_needed
+      global.hoverboard[index].charge = global.hoverboard[index].charge + charge_needed
+    else
+      print("Insufficient energy for charging.")
+    end
+  end
+end
+
 function tileCheck(index)
   local tile = getTile(index)
   if inboundTile(tile.name) == false then
