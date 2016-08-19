@@ -12,7 +12,7 @@ data:extend({
   {
     type = "accumulator",
     name = "accelerator_charger",
-    icon = "__base__/graphics/entity/accumulator/accumulator.png",
+    icon = "__MagneticFloor__/graphics/directives/accelerator.png",
     flags = {},
     indestructible = true,
     max_health = 150,
@@ -38,7 +38,7 @@ data:extend({
     },
     picture =
     {
-      filename = "__MagneticFloor__/graphics/transparent.png",
+      filename = "__MagneticFloor__/graphics/directives/accelerator.png",
       priority = "extra-high",
       width = 32,
       height = 32,
