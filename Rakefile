@@ -20,11 +20,7 @@ task :build do |t|
   sh "zip -r " + PROJECT + ".zip " + PROJECT + " -x *.xcf* *.zip* *.DS_Store* *.kra*"
 end
 
-task :copy do |t|
-  sh "cp " + PROJECT + ".zip " + DEV_DIR
-end
-
-task :cycle => [:build,:copy,:clean]
+task :cycle => [:build,:clean]
 
 task :symlink do |t|
   sh "rm -rf " + DEV_DIR
