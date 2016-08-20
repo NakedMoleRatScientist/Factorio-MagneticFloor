@@ -20,8 +20,6 @@ task :build do |t|
   sh "zip -r " + PROJECT + ".zip " + PROJECT + " -x *.xcf* *.zip* *.DS_Store* *.kra*"
 end
 
-task :cycle => [:build,:clean]
-
 task :symlink do |t|
   sh "rm -rf " + DEV_DIR
   destination = DEV_DIR + PROJECT
