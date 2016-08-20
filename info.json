@@ -4,7 +4,7 @@
   "title": "MagneticFloor",
   "author": "kiba",
   "contact": "hackerkiba@gmail.com",
-  "homepage": "",
+  "homepage": "https://github.com/kiba/Factorio-MagneticFloor",
   "description": "Go faster, with magnetic floors.",
   "dependencies": ["base >= 0.13.0"],
   "factorio_version": "0.13.0"
