@@ -24,17 +24,14 @@ function inboundTile(name)
   return false
 end
 
-function charge_hoverboard(index,tile)
-  local entity = game.players[index].surface.find_entity("accelerator_charger", tile.position)
-  if entity ~= nil then
-    local charge_needed = 5 - global.hoverboard[index].charge
-    local energy_needed = (charge_needed) * "1000"
-    if (entity.energy - energy_needed) > 0 then
-      entity.energy = entity.energy - energy_needed
-      global.hoverboard[index].charge = global.hoverboard[index].charge + charge_needed
-    else
-      print("Insufficient energy for charging.")
-    end
+function charge_hoverboard(index,entity)
+  local charge_needed = 5 - global.hoverboard[index].charge
+  local energy_needed = (charge_needed) * "1000"
+  if (entity.energy - energy_needed) > 0 then
+    entity.energy = entity.energy - energy_needed
+    global.hoverboard[index].charge = global.hoverboard[index].charge + charge_needed
+  else
+    print("Insufficient energy for charging.")
   end
 end
 
@@ -50,10 +47,10 @@ function tileCheck(index)
     return
   end
   if entity.name == "accelerator_charger" then
-    charge_hoverboard(index,tile)
+    charge_hoverboard(index,entity)
     return
   end
-  if entity.name == "up" then
+  if entity.name == "up" and global.hoverboard[index].charge > 0 then
     game.players[index].walking_state = {walking = walk, direction = defines.direction.north}
   elseif entity.name == "down" then
     game.players[index].walking_state = {walking = walk, direction = defines.direction.south}
