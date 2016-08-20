@@ -29,7 +29,7 @@
 
 **0.1.5 release**
 * ~Nerf the copper floor cost and directive research. Rebalancing.~
-* Replace directive tiles with directive entities, and replace with copper floor.
+* ~Replace directive tiles with directive entities, and place them on top of copper floor.~
 * ~Upgrade stdlib~
 * Update tutorial to reflect that the directive tiles are now entities.
 * Add migration code to account changes made since v0.1.3
