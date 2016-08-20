@@ -12,7 +12,7 @@ end
 task :build do |t|
   json = "info.json"
   plain = "CHANGES LICENSE README.md TODO.md"
-  lua = "data.lua gui.lua control.lua test.lua"
+  lua = "data.lua control.lua"
   directories = "locale prototypes graphics migrations stdlib"
   list = [json,plain,lua,directories,PROJECT].join(" ")
 	sh "mkdir " + PROJECT
