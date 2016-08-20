@@ -4,6 +4,7 @@ file = File.read("info.json")
 info = JSON.load(file)
 PROJECT = info["name"] + "_" + info["version"]
 DEV_DIR = "~/Library/Application\\ Support/factorio/dev_mods/"
+
 task :clean do |t|
   sh "rm -r " + PROJECT
   sh "rm -r " + PROJECT + ".zip"
