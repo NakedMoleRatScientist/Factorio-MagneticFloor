@@ -22,7 +22,8 @@ task :build do |t|
 end
 
 task :symlink do |t|
-  sh "rm -rf " + DEV_DIR
+  sh "rm -r " + DEV_DIR
+  sh "mkdir " + DEV_DIR
   destination = DEV_DIR + PROJECT
   source = "~/projects/MagneticFloor"
   sh ["ln -s",source, destination].join(" ")
