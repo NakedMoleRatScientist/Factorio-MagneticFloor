@@ -3,7 +3,7 @@ require "json"
 file = File.read("info.json")
 info = JSON.load(file)
 PROJECT = info["name"] + "_" + info["version"]
-
+DEV_DIR = "~/Library/Application\\ Support/factorio/dev_mods/"
 task :clean do |t|
   sh "rm -r " + PROJECT
   sh "rm -r " + PROJECT + ".zip"
@@ -21,14 +21,14 @@ task :build do |t|
 end
 
 task :copy do |t|
-  sh "cp " + PROJECT + ".zip ~/Library/Application\\ Support/factorio/dev_mods/"
+  sh "cp " + PROJECT + ".zip " + DEV_DIR
 end
 
 task :cycle => [:build,:copy,:clean]
 
 task :symlink do |t|
-  sh "rm -rf " + "~/Library/Application\\ Support/factorio/dev_mods/"
-  destination = "~/Library/Application\\ Support/factorio/dev_mods/" + PROJECT
+  sh "rm -rf " + DEV_DIR
+  destination = DEV_DIR + PROJECT
   source = "~/projects/MagneticFloor"
   sh ["ln -s",source, destination].join(" ")
 end
