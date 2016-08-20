@@ -49,6 +49,8 @@ Version 0.1.4(2016-08-14)
 * Transit from make and makefile to ruby's rake and rakefile build system.
 ---
 Version 0.1.5
-* Rename prototype files.
+* Rename some prototype files such as tile.lua to tiles.lua, item.lua to items.lua, and so on.
 * Upgrade stdlib to 0.6.0
 * Reduce the cost of technology research for directives and accelerator. No blue science needed.
+* Reorganized code by moving some functionality to the src directory.
+* Make all directives entities.
