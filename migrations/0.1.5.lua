@@ -29,7 +29,8 @@ for _, surface in pairs(game.surfaces) do
         for x = 0, 31 do
             for y = 0, 31 do
                 local pos = {chunk.x * 32 + x, chunk.y * 32 + y}
-                if matchTile(surface.get_tile(pos[1], pos[2])) then
+                local tile = surface.get_tile(pos[1],pos[2])
+                if matchTile(tile.name) then
 --                    surface.create_entity{name="inserter", position=pos} --might also want to specify a force here
                 end
             end
