@@ -1,14 +1,12 @@
 
 function matchTile(name)
-  old_tiles = {"accelerator","up","right","down"}
+  old_tiles = {"accelerator","up","right","down","left"}
   for _, t in ipairs(old_tiles) do
     if t == name then
       return true
     end
   end
 end
-
-
 
 --https://forums.factorio.com/viewtopic.php?p=195459#p195459
 for _, surface in pairs(game.surfaces) do
