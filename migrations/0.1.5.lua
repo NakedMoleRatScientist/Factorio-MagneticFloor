@@ -11,3 +11,5 @@ function findDirectiveEntities(surface,position)
   end
   return nil
 end
+
+old_tiles = {"accelerator","up","right","down"}
