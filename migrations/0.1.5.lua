@@ -1,17 +1,4 @@
 
-
-
-function findDirectiveEntities(surface,position)
-  local entities = {"accelerator_charger","up","right","down","left"}
-  for _, name in ipairs(entities) do
-    local target = surface.find_entity(name,position)
-    if target ~= nil then
-      return target
-    end
-  end
-  return nil
-end
-
 function matchTile(name)
   old_tiles = {"accelerator","up","right","down"}
   for _, t in ipairs(old_tiles) do
