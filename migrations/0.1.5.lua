@@ -8,9 +8,9 @@ function matchTile(name)
   end
 end
 
-change_tiles = {}
 --https://forums.factorio.com/viewtopic.php?p=195459#p195459
 for _, surface in pairs(game.surfaces) do
+  change_tiles = {}
   for chunk in surface.get_chunks() do
       for x = 0, 31 do
           for y = 0, 31 do
