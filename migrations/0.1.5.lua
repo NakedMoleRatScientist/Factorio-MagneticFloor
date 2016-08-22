@@ -7,6 +7,7 @@ function matchTile(name)
       return true
     end
   end
+  return nil
 end
 
 --https://forums.factorio.com/viewtopic.php?p=195459#p195459
