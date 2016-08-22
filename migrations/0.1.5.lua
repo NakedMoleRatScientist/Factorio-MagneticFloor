@@ -20,8 +20,11 @@ for _, surface in pairs(game.surfaces) do
               if matchTile(tile.name) then
                 change_tiles.insert(tile)
                 local accel = surface.find_entity("accelerator",pos)
+                -- In 0.1.4, the accelerator_charger entity was created on top of the accelerator tile. in 0.1.5, the entities are created for all the other tiles. Hence, we only need to find if accelerator exists. If not, create them.
                 if accel == nil then
                   surface.create_entity({name="accelerator_charger",position=pos,force="player"})
+                else
+                  surface.create_entity({name=tile.name,position=pos,force="player"})
                 end
 --              surface.create_entity{name="inserter", position=pos} --might also want to specify a force here
               end
