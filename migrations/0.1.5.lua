@@ -31,4 +31,5 @@ for _, surface in pairs(game.surfaces) do
           end
       end
   end
+  surface.set_tile(change_tiles,true)
 end
