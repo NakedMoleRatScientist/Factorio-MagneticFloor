@@ -31,6 +31,10 @@ for _, surface in pairs(game.surfaces) do
               local tile = surface.get_tile(pos[1],pos[2])
               if matchTile(tile.name) then
                 change_tiles.insert(tile)
+                local accel = surface.find_entity("accelerator",pos)
+                if accel == nil then
+                  surface.create_entity({name="accelerator_charger",position=pos,force="player"})
+                end
 --              surface.create_entity{name="inserter", position=pos} --might also want to specify a force here
               end
           end
