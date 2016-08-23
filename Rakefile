@@ -15,7 +15,7 @@ task :build do |t|
   json = "info.json"
   plain = "CHANGES LICENSE README.md TODO.md"
   lua = "data.lua control.lua"
-  directories = "locale prototypes graphics migrations stdlib"
+  directories = "locale prototypes graphics migrations stdlib src"
   list = [json,plain,lua,directories,PROJECT].join(" ")
 	sh "mkdir " + PROJECT
   sh "cp -r " + list
