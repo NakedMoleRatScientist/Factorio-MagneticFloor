@@ -29,6 +29,8 @@ task :copy do |t|
   sh "cp " + PROJECT + ".zip " + test_dir
 end
 
+task :cycle => [:build,:copy,:clean]
+
 task :symlink do |t|
   sh "rm -r " + DEV_DIR
   sh "mkdir " + DEV_DIR
