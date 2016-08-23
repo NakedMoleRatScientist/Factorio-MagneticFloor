@@ -35,6 +35,9 @@ function charge_hoverboard(index,entity)
   end
 end
 
+function motionCheck(index)
+end
+
 function tileCheck(index)
   local tile = getTile(index)
   if inboundTile(tile.name) == false then
