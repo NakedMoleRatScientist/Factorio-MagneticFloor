@@ -25,6 +25,10 @@ for _, surface in pairs(game.surfaces) do
           -- In 0.1.4, the accelerator_charger entity was created on top of the accelerator tile. in 0.1.5, the entities are created for all the other tiles. Hence, we only need to find if accelerator exists. If not, create them.
           if accel == nil and tile.name == "accelerator" then
             surface.create_entity({name="accelerator_charger",position=pos,force="player"})
+          elseif accel ~= nil then
+            -- If the existing accelerator is not destroyed, there will be a weirdness in the way that the entity is positioned.
+            accel.destroy()
+            surface.create_entity({name="accelerator_charger",position=pos,force="player"})
           elseif tile.name ~= "accelerator" then
             surface.create_entity({name=tile.name,position=pos,force="player"})
           end
