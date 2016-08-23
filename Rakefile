@@ -23,7 +23,10 @@ task :build do |t|
 end
 
 task :copy do |t|
-  sh "cp " + PROJECT + ".zip " + GAME_DIR + "/test_mods/"
+  test_dir = GAME_DIR + "/test_mods/"
+  sh "rm -r " + test_dir
+  sh "mkdir " + test_dir
+  sh "cp " + PROJECT + ".zip " + test_dir
 end
 
 task :symlink do |t|
