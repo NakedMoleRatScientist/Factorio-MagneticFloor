@@ -92,6 +92,36 @@ data:extend({
         height= 32,
       }
     }
+  },
+  {
+    type = "simple-entity",
+    name = "arrow",
+    icon = "__MagneticFloor__/graphics/directives/up.png",
+    flags = {},
+    max_health = 20,
+    collision_mask = {"water-tile"},
+    collision_box = {{-.4, -.4}, {.4, .4}},
+    selection_box = {{-.5, -.5}, {.5, .5}},
+    minable =
+    {
+      mining_particle = "stone-particle",
+      mining_time = 0.1,
+      result = "arrow",
+      count = 1
+    },
+    indestructible = true,
+    subgroup = "magnetic-floor",
+    order = "d[directives]-u[up]",
+    render_layer = "decorative",
+    rotatable = true,
+    pictures =
+    {
+      {
+        filename = "__MagneticFloor__/graphics/directives/up.png",
+        width = 32,
+        height= 32,
+      }
+    }
   }
 })
 

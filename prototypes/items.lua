@@ -102,5 +102,14 @@ data:extend({
     place_result = "read",
     stack_size = 50,
     order = "r[concrete]"
+  },
+  {
+    type = 'item',
+    name = 'arrow',
+    icon = "__MagneticFloor__/graphics/directives/read.png",
+    flags = {"goes-to-quickbar"},
+    place_result = "arrow",
+    stack_size = 50,
+    order = "r[concrete]"
   }
 })
