@@ -56,4 +56,4 @@ Version 0.1.5(2016-08-23)
 * Make all directives entities. Accelerators are now considered directives.
 * Migration is now available for transiting from 0.1.3 or 0.1.4 to 0.1.5.
 * Update tutorial to account for changes made to the tiles and the entities.
-* Rake task symlink now create a symbolic link from inside the dev_mod directory to project directory, eliminating a friction in development.
+* Rake task symlink now create a symbolic link from inside the dev_mod directory to project directory, eliminating a source of friction in the development process.
