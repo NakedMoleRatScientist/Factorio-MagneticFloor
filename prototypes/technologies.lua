@@ -177,5 +177,33 @@ data:extend({
       }
     },
     order = "[cd]"
+  },
+  {
+    type = "technology",
+    name = "read_directive",
+    icon = "__MagneticFloor__/graphics/directives/left.png",
+    prerequisites =
+    {
+      "directives",
+    },
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "read"
+      },
+    },
+    unit =
+    {
+      count = 30,
+      time = 70,
+      ingredients =
+      {
+        {"science-pack-1",3},
+        {"science-pack-2",3},
+        {"science-pack-3",3}
+      }
+    },
+    order = "[ce]"
   }
 })
