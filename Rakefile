@@ -3,7 +3,8 @@ require "json"
 file = File.read("info.json")
 info = JSON.load(file)
 PROJECT = info["name"] + "_" + info["version"]
-DEV_DIR = "~/Library/Application\\ Support/factorio/dev_mods/"
+GAME_DIR = "~/Library/Application\\ Support/factorio/"
+DEV_DIR = GAME_DIR + "dev_mods/"
 
 task :clean do |t|
   sh "rm -r " + PROJECT
@@ -19,6 +20,10 @@ task :build do |t|
 	sh "mkdir " + PROJECT
   sh "cp -r " + list
   sh "zip -r " + PROJECT + ".zip " + PROJECT + " -x *.xcf* *.zip* *.DS_Store* *.kra*"
+end
+
+task :copy do |t|
+  sh "cp " + PROJECT + ".zip " + GAME_DIR + "/test_mods/"
 end
 
 task :symlink do |t|
