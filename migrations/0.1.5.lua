@@ -10,6 +10,10 @@ function matchTile(name)
   return nil
 end
 
+function createCharger (surface,pos)
+  surface.create_entity({name="accelerator_charger",position=pos,force="player"})
+end
+
 --https://forums.factorio.com/viewtopic.php?p=195459#p195459
 for _, surface in pairs(game.surfaces) do
   change_tiles = {}
