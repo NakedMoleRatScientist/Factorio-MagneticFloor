@@ -4,7 +4,7 @@ function addDirective(name)
   copy.name = name
   local image = "__MagneticFloor__/graphics/directives/"..name..".png"
   copy.icon = image
-  copy.icon.minable.result = name
+  copy.minable.result = name
   copy.pictures[1].filename = image
   return copy
 end
