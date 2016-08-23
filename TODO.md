@@ -10,10 +10,6 @@
 ~* Use GIF.~
 * Make a youtube video on how to do it.
 
-**smart directives**
-* rotatable arrows - Can adjust based on input.
-* read directive - decider combinator that determine arrows and more.
-
 **vehicles**
 * Make the car workable on copper floors.
 
@@ -33,3 +29,8 @@
 * ~Upgrade stdlib~
 * ~Update tutorial to reflect that the directive tiles are now entities.~
 * ~Add migration code to account changes made since v0.1.3~
+
+**0.2.0 release**
+* Implement arrows that can be rotated.
+* Write migration code to replace all the previous navigation directives with the rotatable arrow.
+* Implement read directive
