@@ -98,5 +98,6 @@ data:extend({
 data:extend({
   addDirective("down"),
   addDirective("right"),
-  addDirective("left")
+  addDirective("left"),
+  addDirective("read")
 })
