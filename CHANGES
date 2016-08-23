@@ -54,3 +54,4 @@ Version 0.1.5
 * Reduce the cost of technology research for directives and accelerator. No blue science needed.
 * Reorganized code by moving some functionality to the src directory.
 * Make all directives entities.
+* Migration is now available for transiting from 0.1.3 or 0.1.4 to 0.1.5.
