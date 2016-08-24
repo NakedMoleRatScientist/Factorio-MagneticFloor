@@ -35,7 +35,8 @@ function charge_hoverboard(index,entity)
   end
 end
 
-function motionCheck(index)
+function motionCheck(index,entity)
+  local walk = game.players[index].walking_state.walking
   if entity.name == "up" then
     game.players[index].walking_state = {walking = walk, direction = defines.direction.north}
   elseif entity.name == "down" then
@@ -53,7 +54,6 @@ function tileCheck(index)
     global.hoverboard[index].charge = 0
     return
   end
-  local walk = game.players[index].walking_state.walking
   local entity = getDirectiveEntity(index)
   if entity == nil then
     return
@@ -63,6 +63,6 @@ function tileCheck(index)
     return
   end
   if global.hoverboard[index].charge > 0 then
-    motionCheck(index)
+    motionCheck(index,entity)
   end
 end
