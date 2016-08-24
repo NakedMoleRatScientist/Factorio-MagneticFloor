@@ -19,7 +19,7 @@ Next, you'll need to lay a path of copper flooring from your intended starting l
 <hr>
 ![pathway](graphics/examples/copper_pathway.png)
 <hr>
-The last component for automated movement are the directive entities: (![accelerator](graphics/directives/accelerator.png),![left](graphics/directives/left.png), ![right](graphics/directives/right.png), ![down](graphics/directives/down.png), ![up](graphics/directives/up.png)). The purpose of an accelerator direcive is to charge your hoverboard, providing the energy it needs for automated movement for five seconds, or five ticks. Like an accumulator, you'll need to provide electricity in order for it to work. The arrow directives will change the direction your character will be moving. Up, down, left, right arrows are what it is said on the tin.
+The last component for automated movement are the directive entities: (![accelerator](graphics/directives/accelerator.png),![left](graphics/directives/left.png), ![right](graphics/directives/right.png), ![down](graphics/directives/down.png), ![up](graphics/directives/up.png)). The purpose of an accelerator directive is to charge your hoverboard, providing the energy it needs for automated movement for five seconds, or five ticks. Like an accumulator, you'll need to provide electricity in order for it to work. The arrow directives will change the direction your character will be moving. Up, down, left, right arrows are what it is said on the tin.
 
 These entities must be placed on copper floors. They will not work on any other tiles.
 
