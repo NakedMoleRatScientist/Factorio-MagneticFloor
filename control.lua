@@ -3,6 +3,7 @@ require 'src/gui'
 require 'src/move'
 require "src/test"
 require "stdlib/log/logger"
+require "stdlib/gui/gui"
 
 LOG = Logger.new("MagneticFloor")
 
