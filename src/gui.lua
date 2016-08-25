@@ -34,3 +34,5 @@ function UI.switchMode(active,index)
     gui.top.hoverboard.mode.caption = UI.captionOFF
   end
 end
+
+InputUI = {}
