@@ -6,6 +6,6 @@
   "contact": "hackerkiba@gmail.com",
   "homepage": "https://github.com/kiba/Factorio-MagneticFloor",
   "description": "Automated movement system.",
-  "dependencies": ["base >= 0.13.0"],
-  "factorio_version": "0.13.0"
+  "dependencies": ["base >= 0.14.0"],
+  "factorio_version": "0.14.1"
 }
