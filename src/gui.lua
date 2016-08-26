@@ -35,4 +35,8 @@ function UI.switchMode(active,index)
   end
 end
 
-InputUI = {}
+function test()
+  print("test")
+end
+
+Gui.Event.register (defines.events.on_player_armor_inventory_changed, "top", test)
