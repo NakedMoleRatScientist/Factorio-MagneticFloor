@@ -48,6 +48,17 @@ function motionCheck(index,entity)
   end
 end
 
+
+function locomotion(index)
+  local orientation = game.players[index].walking_state.direction
+  if global.hoverboard[index].charge > 0 then
+    if game.tick % 60 == 0 then
+      global.hoverboard[index].charge = global.hoverboard[index].charge - 1
+    end
+    game.players[index].walking_state = {walking = true, direction = orientation}
+  end
+end
+
 function tileCheck(index)
   local tile = getTile(index)
   if inboundTile(tile.name) == false then

@@ -50,7 +50,7 @@ end
 
 function armorCheck(index)
   local armor = getArmor(index)
-  if armor.valid_for_read and armor.has_grid then
+  if armor.grid ~= nil then
     return true
   end
   return false
@@ -121,13 +121,3 @@ script.on_event(defines.events.on_gui_click,function(event)
     UI.switchMode(global.hoverboard[index].active,index)
   end
 end)
-
-function locomotion(index)
-  local orientation = game.players[index].walking_state.direction
-  if global.hoverboard[index].charge > 0 then
-    if game.tick % 60 == 0 then
-      global.hoverboard[index].charge = global.hoverboard[index].charge - 1
-    end
-    game.players[index].walking_state = {walking = true, direction = orientation}
-  end
-end
