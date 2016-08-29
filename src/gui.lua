@@ -39,4 +39,4 @@ function test()
   print("test")
 end
 
-Gui.Event.register (defines.events.on_player_armor_inventory_changed, "top", test)
+Event.register (defines.events.on_player_armor_inventory_changed, test)
