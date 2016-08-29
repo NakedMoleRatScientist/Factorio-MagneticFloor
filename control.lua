@@ -44,19 +44,6 @@ end
 
 script.on_init(setup)
 
-function getArmor(index)
-  local armor = game.players[index].get_inventory(defines.inventory.player_armor)[1]
-  return armor
-end
-
-function armorCheck(index)
-  local armor = getArmor(index)
-  if armor.grid ~= nil then
-    return true
-  end
-  return false
-end
-
 script.on_event(defines.events.on_player_joined_game, function(event)
   createPlayerMag(event.player_index)
 end)
