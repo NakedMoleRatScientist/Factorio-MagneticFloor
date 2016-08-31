@@ -65,14 +65,14 @@ end)
 
 script.on_event(defines.events.on_player_placed_equipment, function(event)
   local index = event.player_index
-  if armorCheck(index) and event.equipment.name == "hoverboard" then
+  if getArmor(index) ~= false and event.equipment.name == "hoverboard" then
       activateEquipment(index)
   end
 end)
 
 script.on_event(defines.events.on_player_removed_equipment, function(event)
   local index = event.player_index
-  if armorCheck(index) and event.equipment == "hoverboard" then
+  if getArmor(index) ~= false and event.equipment == "hoverboard" then
     deactivateEquipment(index)
   end
 end)
