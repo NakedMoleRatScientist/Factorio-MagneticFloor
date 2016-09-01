@@ -77,3 +77,7 @@ function tileCheck(index)
     motionCheck(index,entity)
   end
 end
+
+script.on_event(defines.switch_hoverboard_mode,function(event)
+
+end)
