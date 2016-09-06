@@ -6,7 +6,7 @@ function getArmor(index)
   return false
 end
 
-script.on_event(defines.events.on_player_armor_inventory_changed, function(event)
+function decideHoverboardStatus(event)
   local index = event.player_index
   local armor = getArmor(index)
   if armor ~= false then
@@ -19,4 +19,6 @@ script.on_event(defines.events.on_player_armor_inventory_changed, function(event
   else
     deactivateEquipment(index)
   end
-end)
+end
+
+script.on_event(defines.events.on_player_armor_inventory_changed, decideHoverboardStatus)
