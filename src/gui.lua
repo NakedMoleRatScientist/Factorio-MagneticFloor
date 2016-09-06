@@ -35,10 +35,6 @@ function UI.switchMode(active,index)
   end
 end
 
-script.on_event(defines.switch_hoverboard_mode,function(event)
-  UI.switchMode(global.hoverboard[index].active,event.player_index)
-end)
-
 function test()
   LOG.log("asdf_asdf")
   LOG.write()
@@ -46,3 +42,9 @@ function test()
 end
 
 Event.register (defines.events.on_player_armor_inventory_changed, test)
+
+
+script.on_event("switch_hoverboard_mode",function(event)
+  print("test")
+  UI.switchMode(global.hoverboard[event.player_index].active,event.player_index)
+end)
