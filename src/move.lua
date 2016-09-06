@@ -77,3 +77,7 @@ function tileCheck(index)
     motionCheck(index,entity)
   end
 end
+
+script.on_event("switch_hoverboard_mode",function(event)
+  UI.switchMode(global.hoverboard[event.player_index].active,event.player_index)
+end)

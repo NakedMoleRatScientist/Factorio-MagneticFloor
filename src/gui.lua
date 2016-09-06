@@ -34,8 +34,3 @@ function UI.switchMode(active,index)
     gui.top.hoverboard.mode.caption = UI.captionOFF
   end
 end
-
-script.on_event("switch_hoverboard_mode",function(event)
-  print("test")
-  UI.switchMode(global.hoverboard[event.player_index].active,event.player_index)
-end)
