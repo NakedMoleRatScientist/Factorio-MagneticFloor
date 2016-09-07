@@ -84,12 +84,14 @@ script.on_event(defines.events.on_entity_died, function(event)
 end)
 
 function switchMode(index)
-  if global.hoverboard[index].active == false then
-    global.hoverboard[index].active = true
-  elseif global.hoverboard[index].active == true then
-    global.hoverboard[index].active = false
+  if global.hoverboard[index].inserted == true then
+    if global.hoverboard[index].active == false then
+      global.hoverboard[index].active = true
+    elseif global.hoverboard[index].active == true then
+      global.hoverboard[index].active = false
+    end
+    UI.switchMode(global.hoverboard[index].active,index)
   end
-  UI.switchMode(global.hoverboard[index].active,index)
 end
 
 script.on_event(defines.events.on_gui_click,function(event)
