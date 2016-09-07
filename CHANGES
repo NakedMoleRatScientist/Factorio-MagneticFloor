@@ -58,5 +58,7 @@ Version 0.1.5(2016-08-23)
 * Update tutorial to account for changes made to the tiles and the entities.
 * Rake task symlink now create a symbolic link from inside the dev_mod directory to project directory, eliminating a source of friction in the development process.
 ---
-Version 0.2.0
-* Upgrade to 0.14.1
+Version 0.1.6
+* Upgrade to 0.14.x
+* Fix a crash that happens when armor is removed or added from player inventory.
+* Add a new shortcut for pausing the hoverboard by pressing enter to replace lost functionality.
