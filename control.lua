@@ -83,14 +83,18 @@ script.on_event(defines.events.on_entity_died, function(event)
   end
 end)
 
+function switchMode(index)
+  if global.hoverboard[index].active == false then
+    global.hoverboard[index].active = true
+  elseif global.hoverboard[index].active == true then
+    global.hoverboard[index].active = false
+  end
+  UI.switchMode(global.hoverboard[index].active,index)
+end
+
 script.on_event(defines.events.on_gui_click,function(event)
   local index = event.player_index
   if event.element.name == "mode" then
-    if global.hoverboard[index].active == false then
-      global.hoverboard[index].active = true
-    elseif global.hoverboard[index].active == true then
-      global.hoverboard[index].active = false
-    end
-    UI.switchMode(global.hoverboard[index].active,index)
+    switchMode(index)
   end
 end)
